@@ -1351,29 +1351,16 @@ body.case-study-body[data-theme="sleep"] .case-hero .case-hero-text {
 
 .case-aesthetic-system {
   --accent: #D6B98A;
-  --accent-dark: #D6B98A;
+  --accent-dark: #8c744f;
   --bg: #F6F2EA;
   --surface: #EDE6D9;
-  --text: #F6F2EA;
-  --text-soft: rgba(246, 242, 234, 0.72);
-  --text-muted: rgba(237, 230, 217, 0.62);
-  --case-glass-bg:
-    linear-gradient(145deg, rgba(64, 47, 34, 0.72), rgba(31, 28, 24, 0.72)),
-    rgba(31, 28, 24, 0.68);
-  --case-glass-bg-strong:
-    linear-gradient(145deg, rgba(80, 59, 40, 0.82), rgba(31, 28, 24, 0.78)),
-    rgba(31, 28, 24, 0.74);
-  --case-glass-border: rgba(214, 185, 138, 0.18);
-  --case-glass-shadow:
-    0 24px 70px rgba(22, 15, 10, 0.26),
-    inset 0 1px 0 rgba(255, 246, 233, 0.08);
-  --case-pill-bg:
-    linear-gradient(145deg, rgba(214, 185, 138, 0.14), rgba(255, 246, 233, 0.04)),
-    rgba(31, 28, 24, 0.34);
+  --text: #1F1C18;
+  --text-soft: #6E655A;
+  --text-muted: rgba(110, 101, 90, 0.72);
+  --case-glass-border: rgba(110, 101, 90, 0.18);
   background:
-    radial-gradient(circle at 12% 12%, rgba(214, 185, 138, 0.16), transparent 28rem),
-    radial-gradient(circle at 86% 72%, rgba(246, 242, 234, 0.06), transparent 34rem),
-    linear-gradient(180deg, #2a2119 0%, #1f1c18 100%);
+    radial-gradient(circle at 12% 12%, rgba(214, 185, 138, 0.2), transparent 28rem),
+    radial-gradient(circle at 86% 72%, rgba(33, 46, 66, 0.08), transparent 34rem);
 }
 
 .case-aesthetic-system .case-section-heading {
@@ -1382,10 +1369,9 @@ body.case-study-body[data-theme="sleep"] .case-hero .case-hero-text {
 
 .case-aesthetic-layout {
   display: grid;
-  grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.18fr);
-  gap: clamp(1.2rem, 3vw, 1.8rem);
+  grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.34fr);
+  gap: clamp(1rem, 2.4vw, 1.45rem);
   align-items: stretch;
-  margin-bottom: clamp(1.2rem, 3vw, 1.8rem);
 }
 
 .case-aesthetic-card {
@@ -1404,9 +1390,9 @@ body.case-study-body[data-theme="sleep"] .case-hero .case-hero-text {
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(180deg, rgba(255, 246, 233, 0.06), transparent 48%),
-    radial-gradient(circle at 18% 0%, rgba(214, 185, 138, 0.1), transparent 56%);
-  opacity: 0.78;
+    linear-gradient(180deg, rgba(255, 255, 255, 0.22), transparent 48%),
+    radial-gradient(circle at 18% 0%, rgba(214, 185, 138, 0.14), transparent 56%);
+  opacity: 0.86;
 }
 
 .case-aesthetic-card > * {
@@ -1490,118 +1476,17 @@ body.case-study-body[data-theme="sleep"] .case-hero .case-hero-text {
   display: grid;
   align-self: center;
   place-items: center;
-  width: 1.6rem;
+  width: 1.25rem;
   color: var(--accent-dark);
-  font-size: 1.35rem;
+  font-size: 1.05rem;
   font-weight: 600;
   opacity: 0.7;
-}
-
-.case-process-card {
-  display: grid;
-  grid-template-columns: minmax(220px, 0.78fr) minmax(280px, 1.22fr);
-  gap: clamp(1.2rem, 3vw, 2rem);
-  align-items: center;
-}
-
-.case-process-copy {
-  display: grid;
-  gap: 1rem;
-}
-
-.case-process-media {
-  position: relative;
-  display: block;
-  min-height: clamp(220px, 28vw, 360px);
-  overflow: hidden;
-  border: 1px solid color-mix(in srgb, var(--case-glass-border) 78%, transparent);
-  border-radius: 22px;
-  background:
-    linear-gradient(145deg, rgba(31, 28, 24, 0.9), rgba(79, 61, 42, 0.74)),
-    #1f1c18;
-  box-shadow: inset 0 1px 0 rgba(255, 246, 233, 0.08);
-}
-
-.case-process-media::after {
-  content: "";
-  position: absolute;
-  inset: auto 0 0;
-  height: 36%;
-  pointer-events: none;
-  background: linear-gradient(180deg, transparent, rgba(31, 28, 24, 0.26));
-}
-
-.brand-process-video {
-  display: block;
-  width: 100%;
-  height: 100%;
-  min-height: inherit;
-  border-radius: inherit;
-  object-fit: cover;
-}
-
-.case-equation-card {
-  margin-bottom: clamp(1.2rem, 3vw, 1.8rem);
-}
-
-.case-equation-flow {
-  display: grid;
-  gap: clamp(1.15rem, 2.6vw, 1.7rem);
-}
-
-.case-equation-terms {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
-  gap: clamp(1rem, 2.4vw, 1.6rem);
-  align-items: center;
-}
-
-.case-equation-term {
-  display: grid;
-  align-content: start;
-  gap: 0.6rem;
-  min-height: 8rem;
-}
-
-.case-equation-term strong,
-.case-equation-result strong {
-  color: var(--text);
-  font-size: clamp(1.05rem, 1.55vw, 1.2rem);
-  line-height: 1.2;
-}
-
-.case-equation-term p {
-  max-width: 24ch;
-  color: var(--text-soft);
-  font-size: 0.92rem;
-  line-height: 1.56;
-}
-
-.case-equation-divider {
-  height: 0.42rem;
-  border-top: 1px solid color-mix(in srgb, var(--accent) 66%, transparent);
-  border-bottom: 1px solid color-mix(in srgb, var(--accent) 34%, transparent);
-  opacity: 0.78;
-}
-
-.case-equation-result {
-  display: inline-flex;
-  width: fit-content;
-  align-items: center;
-  justify-content: center;
-  padding: 0.85rem 1.05rem;
-  border: 1px solid color-mix(in srgb, var(--accent) 44%, var(--case-glass-border));
-  border-radius: 999px;
-  background:
-    linear-gradient(145deg, rgba(214, 185, 138, 0.2), rgba(255, 246, 233, 0.06)),
-    rgba(31, 28, 24, 0.34);
 }
 
 .case-aesthetic-rules {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(1rem, 2.4vw, 1.45rem);
-  margin-bottom: clamp(1.35rem, 3vw, 2rem);
 }
 
 .case-aesthetic-rules .case-aesthetic-card {
@@ -1609,7 +1494,7 @@ body.case-study-body[data-theme="sleep"] .case-hero .case-hero-text {
 }
 
 .case-aesthetic-rules .case-aesthetic-card::after {
-  content: none;
+  content: "";
   position: absolute;
   top: 1.25rem;
   right: 1.25rem;
@@ -1622,12 +1507,11 @@ body.case-study-body[data-theme="sleep"] .case-hero .case-hero-text {
 
 .case-logo-application {
   display: grid;
-  grid-template-columns: minmax(0, 1.36fr) minmax(260px, 0.64fr);
-  gap: clamp(1.5rem, 4vw, 2.8rem);
+  grid-template-columns: minmax(0, 1.24fr) minmax(260px, 0.76fr);
+  gap: clamp(1.2rem, 3vw, 2rem);
   align-items: center;
   overflow: hidden;
-  margin-bottom: clamp(1.1rem, 2.6vw, 1.6rem);
-  padding: clamp(1.7rem, 4vw, 3rem);
+  padding: clamp(1.2rem, 3vw, 2rem);
   background:
     radial-gradient(circle at 32% 28%, rgba(214, 185, 138, 0.2), transparent 24rem),
     linear-gradient(145deg, rgba(26, 18, 16, 0.94), rgba(54, 37, 27, 0.88)),
@@ -1641,10 +1525,10 @@ body.case-study-body[data-theme="sleep"] .case-hero .case-hero-text {
 .case-logo-stage {
   --nm-logo-color: #D6B98A;
   display: grid;
-  min-height: clamp(330px, 40vw, 520px);
-  gap: clamp(1.1rem, 2.4vw, 1.55rem);
+  min-height: clamp(260px, 34vw, 420px);
+  gap: clamp(0.85rem, 2vw, 1.2rem);
   place-items: center;
-  padding: clamp(1.8rem, 5vw, 3.4rem);
+  padding: clamp(1.2rem, 4vw, 2.4rem);
   border: 1px solid rgba(244, 214, 174, 0.14);
   border-radius: 24px;
   background:
@@ -1654,9 +1538,9 @@ body.case-study-body[data-theme="sleep"] .case-hero .case-hero-text {
 
 .case-logo-stage .case-production-symbol {
   display: block;
-  width: clamp(8rem, 20vw, 13rem);
+  width: clamp(6rem, 15vw, 10rem);
   height: auto;
-  max-height: 240px;
+  max-height: 180px;
   object-fit: contain;
 }
 
@@ -1704,26 +1588,23 @@ body.case-study-body[data-theme="sleep"] .case-hero .case-hero-text {
 
 .case-logo-board {
   display: grid;
-  grid-template-columns: minmax(0, 0.72fr) minmax(240px, 0.28fr);
-  gap: clamp(1rem, 2.4vw, 1.35rem);
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 0.38fr);
+  gap: clamp(1rem, 2.4vw, 1.5rem);
   align-items: center;
   overflow: hidden;
-  max-width: 920px;
-  margin-inline: auto;
-  padding: clamp(0.95rem, 2vw, 1.25rem);
-  opacity: 0.86;
+  padding: clamp(1rem, 2.4vw, 1.45rem);
 }
 
 .case-logo-board-media {
   display: grid;
-  min-height: clamp(180px, 22vw, 280px);
+  min-height: clamp(220px, 30vw, 360px);
   place-items: center;
   overflow: hidden;
   border: 1px solid color-mix(in srgb, var(--case-glass-border) 84%, transparent);
   border-radius: 20px;
   background:
-    linear-gradient(145deg, rgba(255, 246, 233, 0.08), rgba(214, 185, 138, 0.08)),
-    rgba(31, 28, 24, 0.22);
+    linear-gradient(145deg, rgba(255, 252, 246, 0.58), rgba(240, 218, 188, 0.22)),
+    rgba(255, 248, 235, 0.28);
 }
 
 .case-logo-board-media img {
@@ -2161,7 +2042,6 @@ body.case-study-body[data-theme="late-night"] .case-final {
   }
 
   .case-aesthetic-layout,
-  .case-process-card,
   .case-logo-application,
   .case-logo-board {
     grid-template-columns: 1fr;
@@ -2172,7 +2052,7 @@ body.case-study-body[data-theme="late-night"] .case-final {
   }
 
   .case-equation-operator {
-    width: auto;
+    display: none;
   }
 
   .case-final {
@@ -2260,35 +2140,8 @@ body.case-study-body[data-theme="late-night"] .case-final {
     min-height: auto;
   }
 
-  .case-process-card {
-    grid-template-columns: 1fr;
-  }
-
-  .case-process-media {
-    min-height: 260px;
-  }
-
-  .case-equation-terms {
-    grid-template-columns: 1fr;
-    gap: 0.9rem;
-  }
-
-  .case-equation-operator {
-    justify-self: start;
-    min-height: 1rem;
-    opacity: 0.58;
-  }
-
-  .case-equation-term {
-    min-height: auto;
-  }
-
-  .case-equation-result {
-    width: 100%;
-  }
-
   .case-logo-stage {
-    min-height: 280px;
+    min-height: 220px;
   }
 
   .case-logo-board-media {
@@ -2454,7 +2307,6 @@ body.case-study-body[data-theme="late-night"] .case-final {
   .case-hypothesis-card,
   .case-aesthetic-card,
   .case-logo-application,
-  .case-logo-board,
   .case-learning-list,
   .case-results-inner {
     border-radius: 18px;
@@ -2485,21 +2337,12 @@ body.case-study-body[data-theme="late-night"] .case-final {
   }
 
   .case-logo-stage {
-    min-height: 240px;
+    min-height: 190px;
     border-radius: 18px;
   }
 
-  .case-logo-stage .case-production-symbol {
-    width: clamp(7rem, 42vw, 10rem);
-    max-height: 200px;
-  }
-
-  .case-production-wordmark {
-    font-size: clamp(1.8rem, 12vw, 2.6rem);
-  }
-
-  .case-process-media {
-    min-height: 220px;
+  .case-logo-stage img {
+    max-height: 180px;
   }
 
   .case-logo-board-media {
