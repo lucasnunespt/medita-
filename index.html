@@ -444,14 +444,43 @@
     }
 
     .intro-language {
+      --language-text: rgba(244, 230, 218, 0.92);
+      --language-muted: rgba(244, 230, 218, 0.68);
+      --language-bg: rgba(255, 255, 255, 0.08);
+      --language-bg-open: rgba(255, 255, 255, 0.1);
+      --language-border: var(--sanctuary-dim);
+      --language-border-open: rgba(244, 230, 218, 0.28);
+      --language-active-bg: rgba(244, 230, 218, 0.1);
+      --language-shadow:
+        0 10px 34px rgba(0, 0, 0, 0.22),
+        inset 0 0 24px rgba(255, 255, 255, 0.04);
+      --language-shadow-open:
+        0 18px 60px rgba(0, 0, 0, 0.30),
+        inset 0 0 28px rgba(255, 255, 255, 0.05);
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 0.6rem;
       flex-wrap: wrap;
       margin: 0 0 1.25rem;
-      color: rgba(244, 230, 218, 0.8);
+      color: var(--language-muted);
       font-size: 0.78rem;
+    }
+
+    html:is(.theme-morning, .theme-afternoon, .theme-day) body.video-atmosphere-active:not([data-index-phase="meditation-active"]):not([data-index-phase="meditation-complete"]) .intro-language {
+      --language-text: rgba(63, 47, 41, 0.94);
+      --language-muted: rgba(63, 47, 41, 0.72);
+      --language-bg: rgba(248, 238, 222, 0.52);
+      --language-bg-open: rgba(245, 232, 211, 0.72);
+      --language-border: rgba(118, 86, 56, 0.24);
+      --language-border-open: rgba(118, 86, 56, 0.34);
+      --language-active-bg: rgba(93, 67, 43, 0.1);
+      --language-shadow:
+        0 12px 34px rgba(100, 75, 48, 0.12),
+        inset 0 0 24px rgba(255, 255, 255, 0.16);
+      --language-shadow-open:
+        0 16px 48px rgba(100, 75, 48, 0.14),
+        inset 0 0 28px rgba(255, 255, 255, 0.18);
     }
 
     .intro-language .language-pill {
@@ -461,49 +490,29 @@
       justify-content: flex-end;
       width: 44px;
       height: 44px;
-      border: 1px solid var(--sanctuary-dim);
+      border: 1px solid var(--language-border);
       border-radius: 999px;
       overflow: hidden;
-      background: rgba(255, 255, 255, 0.08);
-      color: rgba(244, 230, 218, 0.8);
+      background: var(--language-bg);
+      color: var(--language-text);
       backdrop-filter: blur(18px);
       -webkit-backdrop-filter: blur(18px);
-      box-shadow:
-        0 10px 34px rgba(0, 0, 0, 0.22),
-        inset 0 0 24px rgba(255, 255, 255, 0.04);
+      box-shadow: var(--language-shadow);
       transition:
         width 420ms cubic-bezier(.2,.8,.2,1),
         background 260ms ease,
+        color var(--theme-transition-duration) ease,
         border-color 260ms ease,
         box-shadow 260ms ease;
       z-index: 80;
     }
 
-    html:is(.theme-morning, .theme-afternoon, .theme-day) body.video-atmosphere-active:not([data-index-phase="meditation-active"]):not([data-index-phase="meditation-complete"]) .intro-language .language-pill {
-      background: rgba(255, 250, 242, 0.42);
-      color: var(--text-secondary);
-      box-shadow:
-        0 12px 34px rgba(100, 75, 48, 0.12),
-        inset 0 0 24px rgba(255, 255, 255, 0.18);
-    }
-
     .intro-language .language-pill.is-open {
-      width: 280px;
-      border-color: rgba(244, 230, 218, 0.28);
-      background: rgba(255, 255, 255, 0.1);
-      color: #F4E6DA;
-      box-shadow:
-        0 18px 60px rgba(0, 0, 0, 0.30),
-        inset 0 0 28px rgba(255, 255, 255, 0.05);
-    }
-
-    html:is(.theme-morning, .theme-afternoon, .theme-day) body.video-atmosphere-active:not([data-index-phase="meditation-active"]):not([data-index-phase="meditation-complete"]) .intro-language .language-pill.is-open {
-      border-color: rgba(118, 86, 56, 0.28);
-      background: rgba(255, 250, 242, 0.56);
-      color: var(--text-primary);
-      box-shadow:
-        0 16px 48px rgba(100, 75, 48, 0.14),
-        inset 0 0 28px rgba(255, 255, 255, 0.22);
+      width: min(280px, calc(100vw - 2rem));
+      border-color: var(--language-border-open);
+      background: var(--language-bg-open);
+      color: var(--language-text);
+      box-shadow: var(--language-shadow-open);
     }
 
     .intro-language .language-trigger {
@@ -520,6 +529,14 @@
       background: transparent;
       color: inherit;
       cursor: pointer;
+    }
+
+    .intro-language .language-current {
+      color: currentColor;
+      font-size: 0.76rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      line-height: 1;
     }
 
     .intro-language .language-trigger:focus-visible {
@@ -555,23 +572,11 @@
     @media (hover: hover) and (pointer: fine) {
       .intro-language .language-pill:hover,
       .intro-language .language-pill:focus-within {
-        width: 280px;
-        border-color: rgba(244, 230, 218, 0.28);
-        background: rgba(255, 255, 255, 0.1);
-        color: #F4E6DA;
-        box-shadow:
-          0 18px 60px rgba(0, 0, 0, 0.30),
-          inset 0 0 28px rgba(255, 255, 255, 0.05);
-      }
-
-      html:is(.theme-morning, .theme-afternoon, .theme-day) body.video-atmosphere-active:not([data-index-phase="meditation-active"]):not([data-index-phase="meditation-complete"]) .intro-language .language-pill:hover,
-      html:is(.theme-morning, .theme-afternoon, .theme-day) body.video-atmosphere-active:not([data-index-phase="meditation-active"]):not([data-index-phase="meditation-complete"]) .intro-language .language-pill:focus-within {
-        border-color: rgba(118, 86, 56, 0.28);
-        background: rgba(255, 250, 242, 0.56);
-        color: var(--text-primary);
-        box-shadow:
-          0 16px 48px rgba(100, 75, 48, 0.14),
-          inset 0 0 28px rgba(255, 255, 255, 0.22);
+        width: min(280px, calc(100vw - 2rem));
+        border-color: var(--language-border-open);
+        background: var(--language-bg-open);
+        color: var(--language-text);
+        box-shadow: var(--language-shadow-open);
       }
 
       .intro-language .language-pill:hover .language-options,
@@ -590,7 +595,7 @@
       height: 32px;
       border: 0;
       border-radius: 999px;
-      color: rgba(244, 230, 218, 0.74);
+      color: var(--language-muted);
       background: transparent;
       font: inherit;
       font-size: 0.76rem;
@@ -602,8 +607,8 @@
     .intro-language .language-options button:hover,
     .intro-language .language-options button:focus-visible,
     .intro-language .language-options button.is-active {
-      color: #F4E6DA;
-      background: rgba(244, 230, 218, 0.1);
+      color: var(--language-text);
+      background: var(--language-active-bg);
       outline: none;
     }
 
@@ -612,6 +617,11 @@
     }
 
     @media (max-width: 768px) {
+      .intro-language {
+        gap: 0.5rem;
+        max-width: calc(100vw - 2rem);
+      }
+
       .intro-language .language-pill {
         width: 46px;
         height: 46px;
@@ -624,11 +634,18 @@
       }
 
       .intro-language .language-pill.is-open {
-        width: min(286px, calc(100vw - 32px));
+        width: min(286px, calc(100vw - 2rem));
       }
 
       .intro-language .language-options {
         right: 46px;
+        left: 8px;
+        gap: 2px;
+      }
+
+      .intro-language .language-options button {
+        min-width: clamp(32px, 11vw, 38px);
+        padding-inline: 0.32rem;
       }
     }
 

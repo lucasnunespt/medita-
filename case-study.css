@@ -392,7 +392,6 @@ dd {
 .case-hypothesis-card,
 .case-aesthetic-card,
 .case-logo-application,
-.case-logo-board,
 .case-learning-list,
 .case-results-inner {
   background: var(--case-glass-bg);
@@ -422,7 +421,6 @@ dd {
     .case-hypothesis-card,
     .case-aesthetic-card,
     .case-logo-application,
-    .case-logo-board,
     .case-learning-list
 ):hover {
   transform: translateY(-2px);
@@ -1319,6 +1317,483 @@ body.case-study-body[data-theme="sleep"] .case-hero .case-hero-text {
   opacity: 0.82;
 }
 
+html:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) body.case-study-body .case-emotional-journey,
+body.case-study-body:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) .case-emotional-journey {
+  color: var(--text);
+  background:
+    radial-gradient(circle at 13% 18%, rgba(213, 150, 99, 0.18), transparent 24rem),
+    radial-gradient(circle at 86% 78%, rgba(244, 230, 218, 0.06), transparent 28rem),
+    linear-gradient(180deg, rgba(47, 41, 48, 0.96), rgba(28, 27, 34, 0.98));
+}
+
+html:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) body.case-study-body .case-emotional-journey .case-eyebrow,
+body.case-study-body:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) .case-emotional-journey .case-eyebrow {
+  color: rgba(239, 192, 143, 0.78);
+}
+
+html:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) body.case-study-body .case-emotional-journey .case-section-heading h2,
+body.case-study-body:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) .case-emotional-journey .case-section-heading h2 {
+  color: var(--text);
+}
+
+html:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) body.case-study-body .case-emotional-journey .case-section-heading p:not(.case-eyebrow),
+body.case-study-body:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) .case-emotional-journey .case-section-heading p:not(.case-eyebrow) {
+  color: var(--text-soft);
+}
+
+html:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) body.case-study-body .case-journey-panel,
+body.case-study-body:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) .case-journey-panel {
+  border-color: rgba(238, 190, 145, 0.18);
+  background:
+    radial-gradient(circle at 8% 22%, rgba(213, 150, 99, 0.16), transparent 20rem),
+    radial-gradient(circle at 92% 20%, rgba(244, 230, 218, 0.08), transparent 22rem),
+    linear-gradient(145deg, rgba(88, 61, 52, 0.56), rgba(45, 35, 39, 0.44)),
+    rgba(255, 204, 164, 0.07);
+  box-shadow:
+    0 24px 64px rgba(3, 7, 14, 0.24),
+    0 0 34px rgba(213, 150, 99, 0.1),
+    inset 0 1px 0 rgba(255, 228, 204, 0.08);
+}
+
+html:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) body.case-study-body .case-journey-panel::before,
+body.case-study-body:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) .case-journey-panel::before {
+  background:
+    linear-gradient(180deg, rgba(255, 228, 204, 0.06), transparent 44%),
+    radial-gradient(ellipse at 50% 100%, rgba(213, 150, 99, 0.08), transparent 58%);
+}
+
+html:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) body.case-study-body .case-journey-flow::before,
+body.case-study-body:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) .case-journey-flow::before {
+  background:
+    linear-gradient(90deg, rgba(238, 190, 145, 0.2), rgba(213, 150, 99, 0.48), rgba(238, 220, 199, 0.18));
+}
+
+html:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) body.case-study-body .case-journey-node,
+body.case-study-body:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) .case-journey-node {
+  color: rgba(239, 192, 143, 0.94);
+  border-color: rgba(238, 190, 145, 0.42);
+  background:
+    radial-gradient(circle at 38% 32%, rgba(255, 228, 204, 0.12), rgba(45, 35, 39, 0.92)),
+    rgba(45, 35, 39, 0.88);
+  box-shadow:
+    0 14px 34px rgba(3, 7, 14, 0.24),
+    0 0 0 0.45rem rgba(255, 228, 204, 0.04),
+    inset 0 1px 0 rgba(255, 228, 204, 0.1);
+}
+
+html:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) body.case-study-body .case-journey-copy h3,
+body.case-study-body:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) .case-journey-copy h3 {
+  color: rgba(250, 244, 235, 0.92);
+}
+
+html:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) body.case-study-body .case-journey-copy p,
+body.case-study-body:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) .case-journey-copy p {
+  color: rgba(244, 230, 218, 0.7);
+}
+
+html:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) body.case-study-body .case-journey-step.is-heavy .case-journey-node,
+body.case-study-body:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) .case-journey-step.is-heavy .case-journey-node {
+  color: #140e0b;
+  border-color: rgba(238, 190, 145, 0.52);
+  background:
+    linear-gradient(145deg, rgba(239, 192, 143, 0.96), rgba(213, 150, 99, 0.9));
+  box-shadow:
+    0 16px 38px rgba(3, 7, 14, 0.28),
+    0 0 0 0.45rem rgba(238, 190, 145, 0.08),
+    inset 0 1px 0 rgba(255, 248, 239, 0.3);
+}
+
+html:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) body.case-study-body .case-journey-step.is-heavy .case-journey-copy p,
+body.case-study-body:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) .case-journey-step.is-heavy .case-journey-copy p {
+  color: rgba(244, 230, 218, 0.78);
+}
+
+html:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) body.case-study-body .case-journey-step.is-calm .case-journey-node,
+body.case-study-body:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) .case-journey-step.is-calm .case-journey-node {
+  color: rgba(255, 248, 239, 0.9);
+  border-color: rgba(238, 220, 199, 0.28);
+  background:
+    radial-gradient(circle at 42% 36%, rgba(255, 228, 204, 0.12), rgba(45, 35, 39, 0.9)),
+    rgba(37, 32, 39, 0.92);
+}
+
+html:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) body.case-study-body .case-journey-step.is-calm .case-journey-copy,
+body.case-study-body:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) .case-journey-step.is-calm .case-journey-copy {
+  opacity: 0.9;
+}
+
+html.theme-night body.case-study-body .case-emotional-journey,
+html.theme-late-night body.case-study-body .case-emotional-journey,
+html.theme-sleep body.case-study-body .case-emotional-journey,
+html.theme-warm-night body.case-study-body .case-emotional-journey,
+html[data-theme="night"] body.case-study-body .case-emotional-journey,
+html[data-theme="late-night"] body.case-study-body .case-emotional-journey,
+html[data-theme="sleep"] body.case-study-body .case-emotional-journey,
+html[data-theme="warm-night"] body.case-study-body .case-emotional-journey,
+body.case-study-body.theme-night .case-emotional-journey,
+body.case-study-body.theme-late-night .case-emotional-journey,
+body.case-study-body.theme-sleep .case-emotional-journey,
+body.case-study-body.theme-warm-night .case-emotional-journey,
+body.case-study-body[data-theme="night"] .case-emotional-journey,
+body.case-study-body[data-theme="late-night"] .case-emotional-journey,
+body.case-study-body[data-theme="sleep"] .case-emotional-journey,
+body.case-study-body[data-theme="warm-night"] .case-emotional-journey {
+  color: #f7efe6;
+  background:
+    radial-gradient(circle at 13% 18%, rgba(185, 133, 79, 0.16), transparent 24rem),
+    radial-gradient(circle at 86% 78%, rgba(112, 103, 188, 0.14), transparent 28rem),
+    linear-gradient(180deg, rgba(17, 16, 30, 0.96), rgba(10, 12, 24, 0.98));
+}
+
+html.theme-night body.case-study-body .case-emotional-journey .case-eyebrow,
+html.theme-late-night body.case-study-body .case-emotional-journey .case-eyebrow,
+html.theme-sleep body.case-study-body .case-emotional-journey .case-eyebrow,
+html.theme-warm-night body.case-study-body .case-emotional-journey .case-eyebrow,
+html[data-theme="night"] body.case-study-body .case-emotional-journey .case-eyebrow,
+html[data-theme="late-night"] body.case-study-body .case-emotional-journey .case-eyebrow,
+html[data-theme="sleep"] body.case-study-body .case-emotional-journey .case-eyebrow,
+html[data-theme="warm-night"] body.case-study-body .case-emotional-journey .case-eyebrow,
+body.case-study-body.theme-night .case-emotional-journey .case-eyebrow,
+body.case-study-body.theme-late-night .case-emotional-journey .case-eyebrow,
+body.case-study-body.theme-sleep .case-emotional-journey .case-eyebrow,
+body.case-study-body.theme-warm-night .case-emotional-journey .case-eyebrow,
+body.case-study-body[data-theme="night"] .case-emotional-journey .case-eyebrow,
+body.case-study-body[data-theme="late-night"] .case-emotional-journey .case-eyebrow,
+body.case-study-body[data-theme="sleep"] .case-emotional-journey .case-eyebrow,
+body.case-study-body[data-theme="warm-night"] .case-emotional-journey .case-eyebrow {
+  color: rgba(230, 198, 155, 0.78);
+}
+
+html.theme-night body.case-study-body .case-emotional-journey .case-section-heading h2,
+html.theme-late-night body.case-study-body .case-emotional-journey .case-section-heading h2,
+html.theme-sleep body.case-study-body .case-emotional-journey .case-section-heading h2,
+html.theme-warm-night body.case-study-body .case-emotional-journey .case-section-heading h2,
+html[data-theme="night"] body.case-study-body .case-emotional-journey .case-section-heading h2,
+html[data-theme="late-night"] body.case-study-body .case-emotional-journey .case-section-heading h2,
+html[data-theme="sleep"] body.case-study-body .case-emotional-journey .case-section-heading h2,
+html[data-theme="warm-night"] body.case-study-body .case-emotional-journey .case-section-heading h2,
+body.case-study-body.theme-night .case-emotional-journey .case-section-heading h2,
+body.case-study-body.theme-late-night .case-emotional-journey .case-section-heading h2,
+body.case-study-body.theme-sleep .case-emotional-journey .case-section-heading h2,
+body.case-study-body.theme-warm-night .case-emotional-journey .case-section-heading h2,
+body.case-study-body[data-theme="night"] .case-emotional-journey .case-section-heading h2,
+body.case-study-body[data-theme="late-night"] .case-emotional-journey .case-section-heading h2,
+body.case-study-body[data-theme="sleep"] .case-emotional-journey .case-section-heading h2,
+body.case-study-body[data-theme="warm-night"] .case-emotional-journey .case-section-heading h2 {
+  color: #fbf3e7;
+}
+
+html.theme-night body.case-study-body .case-emotional-journey .case-section-heading p:not(.case-eyebrow),
+html.theme-late-night body.case-study-body .case-emotional-journey .case-section-heading p:not(.case-eyebrow),
+html.theme-sleep body.case-study-body .case-emotional-journey .case-section-heading p:not(.case-eyebrow),
+html.theme-warm-night body.case-study-body .case-emotional-journey .case-section-heading p:not(.case-eyebrow),
+html[data-theme="night"] body.case-study-body .case-emotional-journey .case-section-heading p:not(.case-eyebrow),
+html[data-theme="late-night"] body.case-study-body .case-emotional-journey .case-section-heading p:not(.case-eyebrow),
+html[data-theme="sleep"] body.case-study-body .case-emotional-journey .case-section-heading p:not(.case-eyebrow),
+html[data-theme="warm-night"] body.case-study-body .case-emotional-journey .case-section-heading p:not(.case-eyebrow),
+body.case-study-body.theme-night .case-emotional-journey .case-section-heading p:not(.case-eyebrow),
+body.case-study-body.theme-late-night .case-emotional-journey .case-section-heading p:not(.case-eyebrow),
+body.case-study-body.theme-sleep .case-emotional-journey .case-section-heading p:not(.case-eyebrow),
+body.case-study-body.theme-warm-night .case-emotional-journey .case-section-heading p:not(.case-eyebrow),
+body.case-study-body[data-theme="night"] .case-emotional-journey .case-section-heading p:not(.case-eyebrow),
+body.case-study-body[data-theme="late-night"] .case-emotional-journey .case-section-heading p:not(.case-eyebrow),
+body.case-study-body[data-theme="sleep"] .case-emotional-journey .case-section-heading p:not(.case-eyebrow),
+body.case-study-body[data-theme="warm-night"] .case-emotional-journey .case-section-heading p:not(.case-eyebrow) {
+  color: rgba(247, 239, 230, 0.76);
+}
+
+html.theme-night body.case-study-body .case-journey-panel,
+html.theme-late-night body.case-study-body .case-journey-panel,
+html.theme-sleep body.case-study-body .case-journey-panel,
+html.theme-warm-night body.case-study-body .case-journey-panel,
+html[data-theme="night"] body.case-study-body .case-journey-panel,
+html[data-theme="late-night"] body.case-study-body .case-journey-panel,
+html[data-theme="sleep"] body.case-study-body .case-journey-panel,
+html[data-theme="warm-night"] body.case-study-body .case-journey-panel,
+body.case-study-body.theme-night .case-journey-panel,
+body.case-study-body.theme-late-night .case-journey-panel,
+body.case-study-body.theme-sleep .case-journey-panel,
+body.case-study-body.theme-warm-night .case-journey-panel,
+body.case-study-body[data-theme="night"] .case-journey-panel,
+body.case-study-body[data-theme="late-night"] .case-journey-panel,
+body.case-study-body[data-theme="sleep"] .case-journey-panel,
+body.case-study-body[data-theme="warm-night"] .case-journey-panel {
+  border-color: rgba(230, 198, 155, 0.18);
+  background:
+    radial-gradient(circle at 8% 22%, rgba(185, 133, 79, 0.16), transparent 20rem),
+    radial-gradient(circle at 92% 20%, rgba(112, 103, 188, 0.13), transparent 22rem),
+    linear-gradient(145deg, rgba(38, 32, 50, 0.86), rgba(16, 17, 32, 0.84)),
+    rgba(15, 16, 30, 0.9);
+  box-shadow:
+    0 26px 70px rgba(0, 0, 0, 0.34),
+    0 0 46px rgba(112, 103, 188, 0.1),
+    inset 0 1px 0 rgba(255, 246, 233, 0.08);
+}
+
+html.theme-night body.case-study-body .case-journey-panel::before,
+html.theme-late-night body.case-study-body .case-journey-panel::before,
+html.theme-sleep body.case-study-body .case-journey-panel::before,
+html.theme-warm-night body.case-study-body .case-journey-panel::before,
+html[data-theme="night"] body.case-study-body .case-journey-panel::before,
+html[data-theme="late-night"] body.case-study-body .case-journey-panel::before,
+html[data-theme="sleep"] body.case-study-body .case-journey-panel::before,
+html[data-theme="warm-night"] body.case-study-body .case-journey-panel::before,
+body.case-study-body.theme-night .case-journey-panel::before,
+body.case-study-body.theme-late-night .case-journey-panel::before,
+body.case-study-body.theme-sleep .case-journey-panel::before,
+body.case-study-body.theme-warm-night .case-journey-panel::before,
+body.case-study-body[data-theme="night"] .case-journey-panel::before,
+body.case-study-body[data-theme="late-night"] .case-journey-panel::before,
+body.case-study-body[data-theme="sleep"] .case-journey-panel::before,
+body.case-study-body[data-theme="warm-night"] .case-journey-panel::before {
+  background:
+    linear-gradient(180deg, rgba(255, 246, 233, 0.06), transparent 44%),
+    radial-gradient(ellipse at 50% 100%, rgba(185, 133, 79, 0.08), transparent 58%);
+}
+
+html.theme-night body.case-study-body .case-journey-flow::before,
+html.theme-late-night body.case-study-body .case-journey-flow::before,
+html.theme-sleep body.case-study-body .case-journey-flow::before,
+html.theme-warm-night body.case-study-body .case-journey-flow::before,
+html[data-theme="night"] body.case-study-body .case-journey-flow::before,
+html[data-theme="late-night"] body.case-study-body .case-journey-flow::before,
+html[data-theme="sleep"] body.case-study-body .case-journey-flow::before,
+html[data-theme="warm-night"] body.case-study-body .case-journey-flow::before,
+body.case-study-body.theme-night .case-journey-flow::before,
+body.case-study-body.theme-late-night .case-journey-flow::before,
+body.case-study-body.theme-sleep .case-journey-flow::before,
+body.case-study-body.theme-warm-night .case-journey-flow::before,
+body.case-study-body[data-theme="night"] .case-journey-flow::before,
+body.case-study-body[data-theme="late-night"] .case-journey-flow::before,
+body.case-study-body[data-theme="sleep"] .case-journey-flow::before,
+body.case-study-body[data-theme="warm-night"] .case-journey-flow::before {
+  background:
+    linear-gradient(90deg, rgba(230, 198, 155, 0.22), rgba(230, 198, 155, 0.48), rgba(112, 103, 188, 0.24));
+}
+
+html.theme-night body.case-study-body .case-journey-node,
+html.theme-late-night body.case-study-body .case-journey-node,
+html.theme-sleep body.case-study-body .case-journey-node,
+html.theme-warm-night body.case-study-body .case-journey-node,
+html[data-theme="night"] body.case-study-body .case-journey-node,
+html[data-theme="late-night"] body.case-study-body .case-journey-node,
+html[data-theme="sleep"] body.case-study-body .case-journey-node,
+html[data-theme="warm-night"] body.case-study-body .case-journey-node,
+body.case-study-body.theme-night .case-journey-node,
+body.case-study-body.theme-late-night .case-journey-node,
+body.case-study-body.theme-sleep .case-journey-node,
+body.case-study-body.theme-warm-night .case-journey-node,
+body.case-study-body[data-theme="night"] .case-journey-node,
+body.case-study-body[data-theme="late-night"] .case-journey-node,
+body.case-study-body[data-theme="sleep"] .case-journey-node,
+body.case-study-body[data-theme="warm-night"] .case-journey-node {
+  color: rgba(230, 198, 155, 0.94);
+  border-color: rgba(230, 198, 155, 0.42);
+  background:
+    radial-gradient(circle at 38% 32%, rgba(255, 246, 233, 0.14), rgba(28, 26, 45, 0.9)),
+    rgba(20, 20, 38, 0.94);
+  box-shadow:
+    0 14px 34px rgba(0, 0, 0, 0.24),
+    0 0 0 0.45rem rgba(255, 246, 233, 0.04),
+    inset 0 1px 0 rgba(255, 246, 233, 0.12);
+}
+
+html.theme-night body.case-study-body .case-journey-copy h3,
+html.theme-late-night body.case-study-body .case-journey-copy h3,
+html.theme-sleep body.case-study-body .case-journey-copy h3,
+html.theme-warm-night body.case-study-body .case-journey-copy h3,
+html[data-theme="night"] body.case-study-body .case-journey-copy h3,
+html[data-theme="late-night"] body.case-study-body .case-journey-copy h3,
+html[data-theme="sleep"] body.case-study-body .case-journey-copy h3,
+html[data-theme="warm-night"] body.case-study-body .case-journey-copy h3,
+body.case-study-body.theme-night .case-journey-copy h3,
+body.case-study-body.theme-late-night .case-journey-copy h3,
+body.case-study-body.theme-sleep .case-journey-copy h3,
+body.case-study-body.theme-warm-night .case-journey-copy h3,
+body.case-study-body[data-theme="night"] .case-journey-copy h3,
+body.case-study-body[data-theme="late-night"] .case-journey-copy h3,
+body.case-study-body[data-theme="sleep"] .case-journey-copy h3,
+body.case-study-body[data-theme="warm-night"] .case-journey-copy h3 {
+  color: rgba(255, 248, 238, 0.92);
+}
+
+html.theme-night body.case-study-body .case-journey-copy p,
+html.theme-late-night body.case-study-body .case-journey-copy p,
+html.theme-sleep body.case-study-body .case-journey-copy p,
+html.theme-warm-night body.case-study-body .case-journey-copy p,
+html[data-theme="night"] body.case-study-body .case-journey-copy p,
+html[data-theme="late-night"] body.case-study-body .case-journey-copy p,
+html[data-theme="sleep"] body.case-study-body .case-journey-copy p,
+html[data-theme="warm-night"] body.case-study-body .case-journey-copy p,
+body.case-study-body.theme-night .case-journey-copy p,
+body.case-study-body.theme-late-night .case-journey-copy p,
+body.case-study-body.theme-sleep .case-journey-copy p,
+body.case-study-body.theme-warm-night .case-journey-copy p,
+body.case-study-body[data-theme="night"] .case-journey-copy p,
+body.case-study-body[data-theme="late-night"] .case-journey-copy p,
+body.case-study-body[data-theme="sleep"] .case-journey-copy p,
+body.case-study-body[data-theme="warm-night"] .case-journey-copy p {
+  color: rgba(247, 239, 230, 0.7);
+}
+
+html.theme-night body.case-study-body .case-journey-step.is-heavy .case-journey-node,
+html.theme-late-night body.case-study-body .case-journey-step.is-heavy .case-journey-node,
+html.theme-sleep body.case-study-body .case-journey-step.is-heavy .case-journey-node,
+html.theme-warm-night body.case-study-body .case-journey-step.is-heavy .case-journey-node,
+html[data-theme="night"] body.case-study-body .case-journey-step.is-heavy .case-journey-node,
+html[data-theme="late-night"] body.case-study-body .case-journey-step.is-heavy .case-journey-node,
+html[data-theme="sleep"] body.case-study-body .case-journey-step.is-heavy .case-journey-node,
+html[data-theme="warm-night"] body.case-study-body .case-journey-step.is-heavy .case-journey-node,
+body.case-study-body.theme-night .case-journey-step.is-heavy .case-journey-node,
+body.case-study-body.theme-late-night .case-journey-step.is-heavy .case-journey-node,
+body.case-study-body.theme-sleep .case-journey-step.is-heavy .case-journey-node,
+body.case-study-body.theme-warm-night .case-journey-step.is-heavy .case-journey-node,
+body.case-study-body[data-theme="night"] .case-journey-step.is-heavy .case-journey-node,
+body.case-study-body[data-theme="late-night"] .case-journey-step.is-heavy .case-journey-node,
+body.case-study-body[data-theme="sleep"] .case-journey-step.is-heavy .case-journey-node,
+body.case-study-body[data-theme="warm-night"] .case-journey-step.is-heavy .case-journey-node {
+  color: #17111a;
+  border-color: rgba(230, 198, 155, 0.52);
+  background:
+    linear-gradient(145deg, rgba(230, 198, 155, 0.96), rgba(185, 133, 79, 0.9));
+  box-shadow:
+    0 16px 38px rgba(0, 0, 0, 0.28),
+    0 0 0 0.45rem rgba(230, 198, 155, 0.08),
+    inset 0 1px 0 rgba(255, 248, 238, 0.35);
+}
+
+html.theme-night body.case-study-body .case-journey-step.is-heavy .case-journey-copy p,
+html.theme-late-night body.case-study-body .case-journey-step.is-heavy .case-journey-copy p,
+html.theme-sleep body.case-study-body .case-journey-step.is-heavy .case-journey-copy p,
+html.theme-warm-night body.case-study-body .case-journey-step.is-heavy .case-journey-copy p,
+html[data-theme="night"] body.case-study-body .case-journey-step.is-heavy .case-journey-copy p,
+html[data-theme="late-night"] body.case-study-body .case-journey-step.is-heavy .case-journey-copy p,
+html[data-theme="sleep"] body.case-study-body .case-journey-step.is-heavy .case-journey-copy p,
+html[data-theme="warm-night"] body.case-study-body .case-journey-step.is-heavy .case-journey-copy p,
+body.case-study-body.theme-night .case-journey-step.is-heavy .case-journey-copy p,
+body.case-study-body.theme-late-night .case-journey-step.is-heavy .case-journey-copy p,
+body.case-study-body.theme-sleep .case-journey-step.is-heavy .case-journey-copy p,
+body.case-study-body.theme-warm-night .case-journey-step.is-heavy .case-journey-copy p,
+body.case-study-body[data-theme="night"] .case-journey-step.is-heavy .case-journey-copy p,
+body.case-study-body[data-theme="late-night"] .case-journey-step.is-heavy .case-journey-copy p,
+body.case-study-body[data-theme="sleep"] .case-journey-step.is-heavy .case-journey-copy p,
+body.case-study-body[data-theme="warm-night"] .case-journey-step.is-heavy .case-journey-copy p {
+  color: rgba(247, 239, 230, 0.78);
+}
+
+html.theme-night body.case-study-body .case-journey-step.is-calm .case-journey-node,
+html.theme-late-night body.case-study-body .case-journey-step.is-calm .case-journey-node,
+html.theme-sleep body.case-study-body .case-journey-step.is-calm .case-journey-node,
+html.theme-warm-night body.case-study-body .case-journey-step.is-calm .case-journey-node,
+html[data-theme="night"] body.case-study-body .case-journey-step.is-calm .case-journey-node,
+html[data-theme="late-night"] body.case-study-body .case-journey-step.is-calm .case-journey-node,
+html[data-theme="sleep"] body.case-study-body .case-journey-step.is-calm .case-journey-node,
+html[data-theme="warm-night"] body.case-study-body .case-journey-step.is-calm .case-journey-node,
+body.case-study-body.theme-night .case-journey-step.is-calm .case-journey-node,
+body.case-study-body.theme-late-night .case-journey-step.is-calm .case-journey-node,
+body.case-study-body.theme-sleep .case-journey-step.is-calm .case-journey-node,
+body.case-study-body.theme-warm-night .case-journey-step.is-calm .case-journey-node,
+body.case-study-body[data-theme="night"] .case-journey-step.is-calm .case-journey-node,
+body.case-study-body[data-theme="late-night"] .case-journey-step.is-calm .case-journey-node,
+body.case-study-body[data-theme="sleep"] .case-journey-step.is-calm .case-journey-node,
+body.case-study-body[data-theme="warm-night"] .case-journey-step.is-calm .case-journey-node {
+  color: rgba(255, 248, 238, 0.9);
+  border-color: rgba(157, 148, 236, 0.34);
+  background:
+    radial-gradient(circle at 42% 36%, rgba(255, 246, 233, 0.14), rgba(25, 24, 45, 0.9)),
+    rgba(17, 18, 36, 0.96);
+}
+
+html.theme-night body.case-study-body .case-journey-step.is-calm .case-journey-copy,
+html.theme-late-night body.case-study-body .case-journey-step.is-calm .case-journey-copy,
+html.theme-sleep body.case-study-body .case-journey-step.is-calm .case-journey-copy,
+html.theme-warm-night body.case-study-body .case-journey-step.is-calm .case-journey-copy,
+html[data-theme="night"] body.case-study-body .case-journey-step.is-calm .case-journey-copy,
+html[data-theme="late-night"] body.case-study-body .case-journey-step.is-calm .case-journey-copy,
+html[data-theme="sleep"] body.case-study-body .case-journey-step.is-calm .case-journey-copy,
+html[data-theme="warm-night"] body.case-study-body .case-journey-step.is-calm .case-journey-copy,
+body.case-study-body.theme-night .case-journey-step.is-calm .case-journey-copy,
+body.case-study-body.theme-late-night .case-journey-step.is-calm .case-journey-copy,
+body.case-study-body.theme-sleep .case-journey-step.is-calm .case-journey-copy,
+body.case-study-body.theme-warm-night .case-journey-step.is-calm .case-journey-copy,
+body.case-study-body[data-theme="night"] .case-journey-step.is-calm .case-journey-copy,
+body.case-study-body[data-theme="late-night"] .case-journey-step.is-calm .case-journey-copy,
+body.case-study-body[data-theme="sleep"] .case-journey-step.is-calm .case-journey-copy,
+body.case-study-body[data-theme="warm-night"] .case-journey-step.is-calm .case-journey-copy {
+  opacity: 0.9;
+}
+
+@media (max-width: 980px) {
+  .case-journey-panel {
+    padding: clamp(1.2rem, 3.5vw, 1.6rem);
+  }
+
+  .case-journey-flow {
+    grid-template-columns: 1fr;
+    gap: 1.15rem;
+  }
+
+  .case-journey-flow::before {
+    top: 0;
+    bottom: 0;
+    left: 1.55rem;
+    width: 2px;
+    height: auto;
+    background:
+      linear-gradient(180deg, rgba(127, 100, 72, 0.32), rgba(185, 133, 79, 0.58), rgba(185, 133, 79, 0.22));
+  }
+
+  html:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) body.case-study-body .case-journey-flow::before,
+  body.case-study-body:is(.theme-sunset, .theme-evening, [data-theme="sunset"], [data-theme="evening"]) .case-journey-flow::before {
+    background:
+      linear-gradient(180deg, rgba(238, 190, 145, 0.2), rgba(213, 150, 99, 0.48), rgba(238, 220, 199, 0.18));
+  }
+
+  html.theme-night body.case-study-body .case-journey-flow::before,
+  html.theme-late-night body.case-study-body .case-journey-flow::before,
+  html.theme-sleep body.case-study-body .case-journey-flow::before,
+  html.theme-warm-night body.case-study-body .case-journey-flow::before,
+  html[data-theme="night"] body.case-study-body .case-journey-flow::before,
+  html[data-theme="late-night"] body.case-study-body .case-journey-flow::before,
+  html[data-theme="sleep"] body.case-study-body .case-journey-flow::before,
+  html[data-theme="warm-night"] body.case-study-body .case-journey-flow::before,
+  body.case-study-body.theme-night .case-journey-flow::before,
+  body.case-study-body.theme-late-night .case-journey-flow::before,
+  body.case-study-body.theme-sleep .case-journey-flow::before,
+  body.case-study-body.theme-warm-night .case-journey-flow::before,
+  body.case-study-body[data-theme="night"] .case-journey-flow::before,
+  body.case-study-body[data-theme="late-night"] .case-journey-flow::before,
+  body.case-study-body[data-theme="sleep"] .case-journey-flow::before,
+  body.case-study-body[data-theme="warm-night"] .case-journey-flow::before {
+    background:
+      linear-gradient(180deg, rgba(230, 198, 155, 0.22), rgba(230, 198, 155, 0.48), rgba(112, 103, 188, 0.24));
+  }
+
+  .case-journey-step {
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-rows: none;
+    justify-items: start;
+    align-items: start;
+    gap: 0.95rem;
+    text-align: left;
+  }
+
+  .case-journey-copy {
+    max-width: none;
+    grid-template-rows: none;
+    justify-items: start;
+    padding-top: 0.18rem;
+  }
+
+  .case-journey-copy h3 {
+    display: block;
+  }
+
+  .case-journey-copy p {
+    max-width: 38ch;
+  }
+}
+
 .case-system-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1350,52 +1825,46 @@ body.case-study-body[data-theme="sleep"] .case-hero .case-hero-text {
 }
 
 .case-aesthetic-system {
-  --accent: #D6B98A;
-  --accent-dark: #D6B98A;
-  --bg: #F6F2EA;
-  --surface: #EDE6D9;
-  --text: #F6F2EA;
-  --text-soft: rgba(246, 242, 234, 0.72);
-  --text-muted: rgba(237, 230, 217, 0.62);
-  --case-glass-bg:
-    linear-gradient(145deg, rgba(64, 47, 34, 0.72), rgba(31, 28, 24, 0.72)),
-    rgba(31, 28, 24, 0.68);
-  --case-glass-bg-strong:
-    linear-gradient(145deg, rgba(80, 59, 40, 0.82), rgba(31, 28, 24, 0.78)),
-    rgba(31, 28, 24, 0.74);
-  --case-glass-border: rgba(214, 185, 138, 0.18);
-  --case-glass-shadow:
-    0 24px 70px rgba(22, 15, 10, 0.26),
-    inset 0 1px 0 rgba(255, 246, 233, 0.08);
-  --case-pill-bg:
-    linear-gradient(145deg, rgba(214, 185, 138, 0.14), rgba(255, 246, 233, 0.04)),
-    rgba(31, 28, 24, 0.34);
-  background:
-    radial-gradient(circle at 12% 12%, rgba(214, 185, 138, 0.16), transparent 28rem),
-    radial-gradient(circle at 86% 72%, rgba(246, 242, 234, 0.06), transparent 34rem),
-    linear-gradient(180deg, #2a2119 0%, #1f1c18 100%);
+  padding: clamp(3.1rem, 5.2vw, 4.6rem) 0;
+}
+
+.case-aesthetic-system .container {
+  max-width: 980px;
 }
 
 .case-aesthetic-system .case-section-heading {
-  max-width: 760px;
+  max-width: 650px;
+  margin-bottom: clamp(1.45rem, 3vw, 2.15rem);
+}
+
+.case-aesthetic-system .case-card-index {
+  width: auto;
+  min-width: 2rem;
+  height: 1.85rem;
+  padding: 0 0.62rem;
+  color: var(--accent-dark);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
 }
 
 .case-aesthetic-layout {
   display: grid;
   grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.18fr);
-  gap: clamp(1.2rem, 3vw, 1.8rem);
+  gap: clamp(0.9rem, 2vw, 1.25rem);
   align-items: stretch;
-  margin-bottom: clamp(1.2rem, 3vw, 1.8rem);
+  margin-bottom: clamp(0.9rem, 2.2vw, 1.25rem);
 }
 
 .case-aesthetic-card {
   position: relative;
   display: grid;
   align-content: start;
-  gap: 0.9rem;
+  gap: 0.68rem;
   min-height: 100%;
   overflow: hidden;
-  padding: clamp(1.35rem, 2.6vw, 1.85rem);
+  padding: clamp(1rem, 1.8vw, 1.35rem);
 }
 
 .case-aesthetic-card::before {
@@ -1405,7 +1874,7 @@ body.case-study-body[data-theme="sleep"] .case-hero .case-hero-text {
   pointer-events: none;
   background:
     linear-gradient(180deg, rgba(255, 246, 233, 0.06), transparent 48%),
-    radial-gradient(circle at 18% 0%, rgba(214, 185, 138, 0.1), transparent 56%);
+    radial-gradient(circle at 18% 0%, color-mix(in srgb, var(--accent) 14%, transparent), transparent 56%);
   opacity: 0.78;
 }
 
@@ -1414,76 +1883,19 @@ body.case-study-body[data-theme="sleep"] .case-hero .case-hero-text {
   z-index: 1;
 }
 
-.case-aesthetic-card h3 {
+.case-aesthetic-system .case-aesthetic-card h3 {
   max-width: 22ch;
-  color: var(--text);
-  font-size: clamp(1.05rem, 1.6vw, 1.28rem);
+  font-size: clamp(1rem, 1.35vw, 1.16rem);
   line-height: 1.18;
 }
 
-.case-aesthetic-card p {
-  font-size: 0.95rem;
-  line-height: 1.62;
+.case-aesthetic-system .case-aesthetic-card p {
+  font-size: 0.88rem;
+  line-height: 1.55;
 }
 
 .case-brand-meaning {
   border-left: 2px solid color-mix(in srgb, var(--accent) 62%, var(--case-glass-border));
-}
-
-.case-visual-equation {
-  gap: 1.1rem;
-}
-
-.case-equation-row {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
-  gap: clamp(0.58rem, 1vw, 0.8rem);
-  align-items: stretch;
-}
-
-.case-equation-item {
-  display: grid;
-  align-content: start;
-  gap: 0.5rem;
-  min-height: 150px;
-  padding: 1rem;
-  border: 1px solid color-mix(in srgb, var(--case-glass-border) 82%, transparent);
-  border-radius: 18px;
-  background:
-    linear-gradient(145deg, rgba(255, 252, 246, 0.56), rgba(240, 218, 188, 0.24)),
-    rgba(255, 248, 235, 0.28);
-}
-
-.case-equation-symbol {
-  display: inline-grid;
-  width: 2.25rem;
-  height: 2.25rem;
-  place-items: center;
-  border: 1px solid color-mix(in srgb, var(--accent) 42%, var(--case-glass-border));
-  border-radius: 999px;
-  color: var(--accent-dark);
-  background: var(--case-pill-bg);
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.case-equation-item strong {
-  color: var(--text);
-  font-size: 0.94rem;
-  line-height: 1.22;
-}
-
-.case-equation-item p {
-  font-size: 0.82rem;
-  line-height: 1.5;
-}
-
-.case-equation-item.is-result {
-  border-color: color-mix(in srgb, var(--accent) 36%, var(--case-glass-border));
-  background:
-    linear-gradient(145deg, rgba(185, 133, 79, 0.14), rgba(255, 252, 246, 0.46)),
-    rgba(255, 248, 235, 0.36);
 }
 
 .case-equation-operator {
@@ -1499,14 +1911,14 @@ body.case-study-body[data-theme="sleep"] .case-hero .case-hero-text {
 
 .case-process-card {
   display: grid;
-  grid-template-columns: minmax(220px, 0.78fr) minmax(280px, 1.22fr);
-  gap: clamp(1.2rem, 3vw, 2rem);
+  grid-template-columns: minmax(220px, 0.9fr) minmax(240px, 1.1fr);
+  gap: clamp(0.9rem, 2.2vw, 1.35rem);
   align-items: center;
 }
 
 .case-process-copy {
   display: grid;
-  gap: 1rem;
+  gap: 0.72rem;
 }
 
 .case-process-media {
@@ -1516,9 +1928,7 @@ body.case-study-body[data-theme="sleep"] .case-hero .case-hero-text {
   overflow: hidden;
   border: 1px solid color-mix(in srgb, var(--case-glass-border) 78%, transparent);
   border-radius: 22px;
-  background:
-    linear-gradient(145deg, rgba(31, 28, 24, 0.9), rgba(79, 61, 42, 0.74)),
-    #1f1c18;
+  background: var(--case-glass-bg);
   box-shadow: inset 0 1px 0 rgba(255, 246, 233, 0.08);
 }
 
@@ -1541,44 +1951,45 @@ body.case-study-body[data-theme="sleep"] .case-hero .case-hero-text {
 }
 
 .case-equation-card {
-  margin-bottom: clamp(1.2rem, 3vw, 1.8rem);
+  max-width: 880px;
+  margin: 0 auto clamp(0.9rem, 2.2vw, 1.25rem);
 }
 
 .case-equation-flow {
   display: grid;
-  gap: clamp(1.15rem, 2.6vw, 1.7rem);
+  gap: clamp(0.85rem, 1.8vw, 1.15rem);
+  max-width: 820px;
+  margin-inline: auto;
 }
 
 .case-equation-terms {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
-  gap: clamp(1rem, 2.4vw, 1.6rem);
+  gap: clamp(0.65rem, 1.4vw, 1rem);
   align-items: center;
 }
 
 .case-equation-term {
   display: grid;
   align-content: start;
-  gap: 0.6rem;
-  min-height: 8rem;
+  gap: 0.42rem;
+  min-height: 5.8rem;
 }
 
-.case-equation-term strong,
-.case-equation-result strong {
-  color: var(--text);
-  font-size: clamp(1.05rem, 1.55vw, 1.2rem);
+.case-aesthetic-system .case-equation-term strong,
+.case-aesthetic-system .case-equation-result strong {
+  font-size: clamp(0.96rem, 1.2vw, 1.08rem);
   line-height: 1.2;
 }
 
-.case-equation-term p {
+.case-aesthetic-system .case-equation-term p {
   max-width: 24ch;
-  color: var(--text-soft);
-  font-size: 0.92rem;
-  line-height: 1.56;
+  font-size: 0.84rem;
+  line-height: 1.48;
 }
 
 .case-equation-divider {
-  height: 0.42rem;
+  height: 0.3rem;
   border-top: 1px solid color-mix(in srgb, var(--accent) 66%, transparent);
   border-bottom: 1px solid color-mix(in srgb, var(--accent) 34%, transparent);
   opacity: 0.78;
@@ -1589,23 +2000,23 @@ body.case-study-body[data-theme="sleep"] .case-hero .case-hero-text {
   width: fit-content;
   align-items: center;
   justify-content: center;
-  padding: 0.85rem 1.05rem;
+  padding: 0.66rem 0.9rem;
   border: 1px solid color-mix(in srgb, var(--accent) 44%, var(--case-glass-border));
   border-radius: 999px;
   background:
-    linear-gradient(145deg, rgba(214, 185, 138, 0.2), rgba(255, 246, 233, 0.06)),
-    rgba(31, 28, 24, 0.34);
+    linear-gradient(145deg, color-mix(in srgb, var(--accent) 20%, transparent), rgba(255, 246, 233, 0.22)),
+    color-mix(in srgb, var(--surface) 62%, transparent);
 }
 
 .case-aesthetic-rules {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(1rem, 2.4vw, 1.45rem);
-  margin-bottom: clamp(1.35rem, 3vw, 2rem);
+  gap: clamp(0.78rem, 1.8vw, 1.05rem);
+  margin-bottom: clamp(1rem, 2.2vw, 1.35rem);
 }
 
 .case-aesthetic-rules .case-aesthetic-card {
-  min-height: 210px;
+  min-height: 152px;
 }
 
 .case-aesthetic-rules .case-aesthetic-card::after {
@@ -1622,42 +2033,41 @@ body.case-study-body[data-theme="sleep"] .case-hero .case-hero-text {
 
 .case-logo-application {
   display: grid;
-  grid-template-columns: minmax(0, 1.36fr) minmax(260px, 0.64fr);
-  gap: clamp(1.5rem, 4vw, 2.8rem);
+  grid-template-columns: minmax(0, 1.12fr) minmax(240px, 0.88fr);
+  gap: clamp(1rem, 2.6vw, 1.75rem);
   align-items: center;
   overflow: hidden;
-  margin-bottom: clamp(1.1rem, 2.6vw, 1.6rem);
-  padding: clamp(1.7rem, 4vw, 3rem);
-  background:
-    radial-gradient(circle at 32% 28%, rgba(214, 185, 138, 0.2), transparent 24rem),
-    linear-gradient(145deg, rgba(26, 18, 16, 0.94), rgba(54, 37, 27, 0.88)),
-    #1e1512;
-  border-color: rgba(244, 214, 174, 0.18);
-  box-shadow:
-    0 26px 70px rgba(48, 31, 21, 0.18),
-    inset 0 1px 0 rgba(255, 239, 215, 0.08);
+  max-width: 900px;
+  margin: 0 auto clamp(0.9rem, 2vw, 1.2rem);
+  padding: clamp(1.15rem, 2.4vw, 1.75rem);
 }
 
 .case-logo-stage {
-  --nm-logo-color: #D6B98A;
+  --nm-logo-color: var(--accent-dark);
   display: grid;
-  min-height: clamp(330px, 40vw, 520px);
-  gap: clamp(1.1rem, 2.4vw, 1.55rem);
+  min-height: clamp(220px, 26vw, 320px);
+  gap: clamp(0.75rem, 1.8vw, 1.1rem);
   place-items: center;
-  padding: clamp(1.8rem, 5vw, 3.4rem);
-  border: 1px solid rgba(244, 214, 174, 0.14);
-  border-radius: 24px;
+  padding: clamp(1.15rem, 3vw, 2rem);
+  border: 1px solid color-mix(in srgb, var(--case-glass-border) 86%, transparent);
+  border-radius: 20px;
   background:
-    radial-gradient(circle at 50% 44%, rgba(244, 190, 128, 0.12), transparent 48%),
-    rgba(255, 246, 233, 0.035);
+    radial-gradient(circle at 50% 44%, color-mix(in srgb, var(--accent) 14%, transparent), transparent 48%),
+    color-mix(in srgb, var(--surface) 42%, transparent);
 }
 
 .case-logo-stage .case-production-symbol {
   display: block;
-  width: clamp(8rem, 20vw, 13rem);
+  width: clamp(6.4rem, 13vw, 9.2rem);
   height: auto;
-  max-height: 240px;
+  max-height: 160px;
   object-fit: contain;
+}
+
+.case-aesthetic-system .case-logo-stage .case-production-wordmark {
+  color: var(--text);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  letter-spacing: 0;
 }
 
 .case-production-wordmark {
@@ -1671,85 +2081,26 @@ body.case-study-body[data-theme="sleep"] .case-hero .case-hero-text {
 
 .case-logo-copy {
   display: grid;
-  gap: 0.95rem;
+  gap: 0.72rem;
 }
 
-.case-logo-copy .case-card-index {
-  color: rgba(244, 190, 128, 0.88);
-  background:
-    linear-gradient(145deg, rgba(244, 190, 128, 0.14), rgba(255, 246, 233, 0.05));
-  border-color: rgba(244, 190, 128, 0.2);
-}
-
-.case-logo-copy h3 {
-  color: rgba(255, 246, 233, 0.96);
-  font-size: clamp(1.35rem, 2.4vw, 2rem);
+.case-aesthetic-system .case-logo-copy h3 {
+  font-size: clamp(1.18rem, 1.8vw, 1.55rem);
   line-height: 1.08;
 }
 
-.case-logo-copy p {
-  color: rgba(255, 237, 213, 0.78);
-  font-size: clamp(0.98rem, 1.4vw, 1.08rem);
-  line-height: 1.66;
+.case-aesthetic-system .case-logo-copy p {
+  font-size: clamp(0.9rem, 1.15vw, 0.98rem);
+  line-height: 1.58;
 }
 
 .case-logo-copy .case-logo-helper {
   margin-top: 0.25rem;
-  padding-top: 0.95rem;
-  border-top: 1px solid rgba(244, 214, 174, 0.16);
-  color: rgba(255, 237, 213, 0.66);
+  padding-top: 0.78rem;
+  border-top: 1px solid color-mix(in srgb, var(--case-glass-border) 88%, transparent);
+  color: var(--text-muted);
   font-size: 0.88rem;
   line-height: 1.6;
-}
-
-.case-logo-board {
-  display: grid;
-  grid-template-columns: minmax(0, 0.72fr) minmax(240px, 0.28fr);
-  gap: clamp(1rem, 2.4vw, 1.35rem);
-  align-items: center;
-  overflow: hidden;
-  max-width: 920px;
-  margin-inline: auto;
-  padding: clamp(0.95rem, 2vw, 1.25rem);
-  opacity: 0.86;
-}
-
-.case-logo-board-media {
-  display: grid;
-  min-height: clamp(180px, 22vw, 280px);
-  place-items: center;
-  overflow: hidden;
-  border: 1px solid color-mix(in srgb, var(--case-glass-border) 84%, transparent);
-  border-radius: 20px;
-  background:
-    linear-gradient(145deg, rgba(255, 246, 233, 0.08), rgba(214, 185, 138, 0.08)),
-    rgba(31, 28, 24, 0.22);
-}
-
-.case-logo-board-media img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.case-logo-board figcaption {
-  display: grid;
-  gap: 0.65rem;
-}
-
-.case-logo-board figcaption span {
-  color: var(--accent-dark);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.case-logo-board figcaption p {
-  font-size: 0.95rem;
-  line-height: 1.62;
 }
 
 .case-solution-grid {
@@ -2162,13 +2513,8 @@ body.case-study-body[data-theme="late-night"] .case-final {
 
   .case-aesthetic-layout,
   .case-process-card,
-  .case-logo-application,
-  .case-logo-board {
+  .case-logo-application {
     grid-template-columns: 1fr;
-  }
-
-  .case-equation-row {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .case-equation-operator {
@@ -2252,20 +2598,13 @@ body.case-study-body[data-theme="late-night"] .case-final {
     grid-template-columns: 1fr;
   }
 
-  .case-equation-row {
-    grid-template-columns: 1fr;
-  }
-
-  .case-equation-item {
-    min-height: auto;
-  }
-
   .case-process-card {
     grid-template-columns: 1fr;
   }
 
   .case-process-media {
-    min-height: 260px;
+    min-height: clamp(170px, 54vw, 230px);
+    border-radius: 16px;
   }
 
   .case-equation-terms {
@@ -2284,15 +2623,25 @@ body.case-study-body[data-theme="late-night"] .case-final {
   }
 
   .case-equation-result {
+    justify-self: stretch;
     width: 100%;
+    text-align: center;
   }
 
   .case-logo-stage {
-    min-height: 280px;
+    min-height: 200px;
+    padding: 1rem;
   }
 
-  .case-logo-board-media {
-    min-height: 220px;
+  .case-aesthetic-system .case-card-index {
+    max-width: 100%;
+    height: auto;
+    min-height: 1.85rem;
+    white-space: normal;
+  }
+
+  .case-aesthetic-rules .case-aesthetic-card {
+    min-height: auto;
   }
 
   .case-state-card,
@@ -2327,6 +2676,7 @@ body.case-study-body[data-theme="late-night"] .case-final {
 
   .case-journey-step {
     grid-template-columns: auto minmax(0, 1fr);
+    grid-template-rows: none;
     justify-items: start;
     align-items: start;
     gap: 0.95rem;
@@ -2454,7 +2804,6 @@ body.case-study-body[data-theme="late-night"] .case-final {
   .case-hypothesis-card,
   .case-aesthetic-card,
   .case-logo-application,
-  .case-logo-board,
   .case-learning-list,
   .case-results-inner {
     border-radius: 18px;
@@ -2490,21 +2839,12 @@ body.case-study-body[data-theme="late-night"] .case-final {
   }
 
   .case-logo-stage .case-production-symbol {
-    width: clamp(7rem, 42vw, 10rem);
-    max-height: 200px;
+    width: clamp(5.8rem, 32vw, 8rem);
+    max-height: 140px;
   }
 
-  .case-production-wordmark {
-    font-size: clamp(1.8rem, 12vw, 2.6rem);
-  }
-
-  .case-process-media {
-    min-height: 220px;
-  }
-
-  .case-logo-board-media {
-    min-height: 180px;
-    border-radius: 16px;
+  .case-logo-stage .case-production-wordmark {
+    font-size: clamp(1.35rem, 8vw, 2rem);
   }
 
   .case-journey-card {
@@ -2529,6 +2869,53 @@ body.case-study-body[data-theme="late-night"] .case-final {
   .case-thank-you-panel {
     padding: 1.25rem;
     border-radius: 20px;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 820px) {
+  .case-aesthetic-system {
+    padding: clamp(2.7rem, 7vw, 3.6rem) 0;
+  }
+
+  .case-aesthetic-system .container {
+    max-width: 680px;
+  }
+
+  .case-aesthetic-system .case-section-heading {
+    max-width: 560px;
+  }
+
+  .case-aesthetic-layout,
+  .case-process-card,
+  .case-logo-application {
+    grid-template-columns: 1fr;
+  }
+
+  .case-process-media {
+    min-height: clamp(190px, 48vw, 260px);
+  }
+
+  .case-equation-terms {
+    grid-template-columns: 1fr;
+    gap: 0.55rem;
+  }
+
+  .case-equation-operator {
+    justify-self: start;
+    min-height: auto;
+    line-height: 1;
+  }
+
+  .case-equation-term {
+    min-height: auto;
+  }
+
+  .case-equation-result {
+    width: 100%;
+  }
+
+  .case-logo-stage {
+    min-height: 220px;
   }
 }
 
