@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="index_meta_title">NeuroMedit</title>
   <link rel="icon" href="assets/neuromedit-symbol-vector.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="settings-panel.css">
   <script src="translations-en.js"></script>
   <script src="translations-pt.js"></script>
   <script src="translations-it.js"></script>
@@ -1102,6 +1103,8 @@
       <h1 class="intro-title" id="introTitle" data-i18n="index_welcome_title">Welcome to NeuroMedit.</h1>
       <p class="intro-copy" data-i18n="index_welcome_copy">Before you continue, pause for a moment. Breathe slowly and let your body arrive here.</p>
       
+      <p class="intro-note" data-i18n="index_intro_copy">Take one slow breath before you begin.</p>
+      
       <div class="intro-language" aria-live="polite">
         <span data-i18n="index_language_note">Detected language</span>
         <div data-language-host></div>
@@ -1539,6 +1542,7 @@
       renderIntroPhase();
     })();
   </script>
+  <script src="settings-panel.js"></script>
   <script src="js/airlock-flow.js"></script>
 </body>
 </html>

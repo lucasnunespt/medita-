@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt">
 <head>
   <meta charset="UTF-8" />
@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="case-study.css" />
   <link rel="stylesheet" href="header.css" />
   <link rel="stylesheet" href="theme-sync.css" />
+  <link rel="stylesheet" href="settings-panel.css">
   <script src="theme-sync.js"></script>
 </head>
 <body class="case-study-body">
@@ -18,37 +19,37 @@
     <div class="container header-shell">
       <a class="brand" href="/"><img src="assets/neuromedit-symbol-vector.svg" alt="NeuroMedit symbol" class="brand-symbol"><span class="brand-wordmark">NeuroMedit</span></a>
 
-      <nav class="header-nav header-nav-desktop" aria-label="Main navigation">
+      <nav class="header-nav header-nav-desktop" aria-label="Main navigation" data-i18n="global_nav_aria" data-i18n-attr="aria-label">
         <span class="nav-indicator" aria-hidden="true"></span>
 
-        <a href="home.html" class="header-nav-link nav-link" data-nav-key="home" aria-label="Home" title="Home">
+        <a href="home.html" class="header-nav-link nav-link" data-nav-key="home" aria-label="Home" title="Home" data-i18n="global_nav_home" data-i18n-attr="aria-label,title">
           <span class="header-nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M3.5 10.5L12 3.75L20.5 10.5V19.5H14.75V14.25H9.25V19.5H3.5V10.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-          <span class="header-nav-text">Home</span>
+          <span class="header-nav-text" data-i18n="global_nav_home">Home</span>
         </a>
 
-        <a href="library.html" class="header-nav-link nav-link" data-nav-key="library" aria-label="Library" title="Library">
+        <a href="library.html" class="header-nav-link nav-link" data-nav-key="library" aria-label="Library" title="Library" data-i18n="global_nav_library" data-i18n-attr="aria-label,title">
           <span class="header-nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M12 6.5C10.3 5.4 8.3 4.85 6.25 4.9C5.03 4.93 3.83 5.18 2.7 5.65V18.35C3.83 17.88 5.03 17.63 6.25 17.6C8.3 17.55 10.3 18.1 12 19.2C13.7 18.1 15.7 17.55 17.75 17.6C18.97 17.63 20.17 17.88 21.3 18.35V5.65C20.17 5.18 18.97 4.93 17.75 4.9C15.7 4.85 13.7 5.4 12 6.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 6.5V19.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-          <span class="header-nav-text">Library</span>
+          <span class="header-nav-text" data-i18n="global_nav_library">Library</span>
         </a>
 
-        <a href="about.html" class="header-nav-link nav-link" data-nav-key="about" aria-label="About" title="About">
+        <a href="about.html" class="header-nav-link nav-link" data-nav-key="about" aria-label="About" title="About" data-i18n="global_nav_about" data-i18n-attr="aria-label,title">
           <span class="header-nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8"></circle><path d="M12 10.75V15.25" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path><circle cx="12" cy="8.2" r="0.8" fill="currentColor"></circle></svg></span>
-          <span class="header-nav-text">About</span>
+          <span class="header-nav-text" data-i18n="global_nav_about">About</span>
         </a>
 
-        <a href="why.html" class="header-nav-link nav-link" data-nav-key="why" aria-label="Why" title="Why">
+        <a href="why.html" class="header-nav-link nav-link" data-nav-key="why" aria-label="Why" title="Why" data-i18n="global_nav_why" data-i18n-attr="aria-label,title">
           <span class="header-nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8"></circle><path d="M9.7 9.7C9.7 8.43 10.73 7.4 12 7.4C13.27 7.4 14.3 8.43 14.3 9.7C14.3 10.53 13.86 11.13 13.09 11.57C12.38 11.98 12 12.41 12 13.15V13.45" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="16.5" r="0.8" fill="currentColor"></circle></svg></span>
-          <span class="header-nav-text">Why</span>
+          <span class="header-nav-text" data-i18n="global_nav_why">Why</span>
         </a>
 
-        <a href="case-study.html" class="header-nav-link nav-link active" data-nav-key="case-study" aria-current="page" aria-label="Case study" title="Case study">
+        <a href="case-study.html" class="header-nav-link nav-link active" data-nav-key="case-study" aria-current="page" aria-label="Case study" title="Case study" data-i18n="nav.case-study" data-i18n-attr="aria-label,title">
           <span class="header-nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M6.2 4.8H17.8C18.68 4.8 19.4 5.52 19.4 6.4V17.6C19.4 18.48 18.68 19.2 17.8 19.2H6.2C5.32 19.2 4.6 18.48 4.6 17.6V6.4C4.6 5.52 5.32 4.8 6.2 4.8Z" stroke="currentColor" stroke-width="1.8"></path><path d="M8 9H16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path><path d="M8 12H14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path><path d="M8 15H12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg></span>
-          <span class="header-nav-text">Case study</span>
+          <span class="header-nav-text" data-i18n="nav.case-study">Case study</span>
         </a>
 
-        <a href="contributors.html" class="header-nav-link nav-link" data-nav-key="contributors" aria-label="Contributors" title="Contributors">
+        <a href="contributors.html" class="header-nav-link nav-link" data-nav-key="contributors" aria-label="Contributors" title="Contributors" data-i18n="nav.contributors" data-i18n-attr="aria-label,title">
           <span class="header-nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M8.2 11.2C10.02 11.2 11.5 9.72 11.5 7.9C11.5 6.08 10.02 4.6 8.2 4.6C6.38 4.6 4.9 6.08 4.9 7.9C4.9 9.72 6.38 11.2 8.2 11.2Z" stroke="currentColor" stroke-width="1.8"></path><path d="M3.6 19.4C4.08 16.72 5.88 15.2 8.2 15.2C10.52 15.2 12.32 16.72 12.8 19.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path><path d="M15.8 10.7C17.3 10.7 18.5 9.5 18.5 8C18.5 6.5 17.3 5.3 15.8 5.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path><path d="M14.8 15.4C17.35 15.58 19.05 17 19.5 19.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg></span>
-          <span class="header-nav-text">Contributors</span>
+          <span class="header-nav-text" data-i18n="nav.contributors">Contributors</span>
         </a>
       </nav>
 
@@ -81,35 +82,35 @@
           </button>
         </div>
 
-        <nav class="header-mobile-nav" aria-label="Main navigation">
-          <a href="home.html" class="header-mobile-link nav-link" data-nav-key="home" aria-label="Home" title="Home">
+        <nav class="header-mobile-nav" aria-label="Main navigation" data-i18n="global_nav_aria" data-i18n-attr="aria-label">
+          <a href="home.html" class="header-mobile-link nav-link" data-nav-key="home" aria-label="Home" title="Home" data-i18n="global_nav_home" data-i18n-attr="aria-label,title">
             <span class="header-nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M3.5 10.5L12 3.75L20.5 10.5V19.5H14.75V14.25H9.25V19.5H3.5V10.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-            <span class="header-mobile-text">Home</span>
+            <span class="header-mobile-text" data-i18n="global_nav_home">Home</span>
           </a>
 
-          <a href="library.html" class="header-mobile-link nav-link" data-nav-key="library" aria-label="Library" title="Library">
+          <a href="library.html" class="header-mobile-link nav-link" data-nav-key="library" aria-label="Library" title="Library" data-i18n="global_nav_library" data-i18n-attr="aria-label,title">
             <span class="header-nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M12 6.5C10.3 5.4 8.3 4.85 6.25 4.9C5.03 4.93 3.83 5.18 2.7 5.65V18.35C3.83 17.88 5.03 17.63 6.25 17.6C8.3 17.55 10.3 18.1 12 19.2C13.7 18.1 15.7 17.55 17.75 17.6C18.97 17.63 20.17 17.88 21.3 18.35V5.65C20.17 5.18 18.97 4.93 17.75 4.9C15.7 4.85 13.7 5.4 12 6.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 6.5V19.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-            <span class="header-mobile-text">Library</span>
+            <span class="header-mobile-text" data-i18n="global_nav_library">Library</span>
           </a>
 
-          <a href="about.html" class="header-mobile-link nav-link" data-nav-key="about" aria-label="About" title="About">
+          <a href="about.html" class="header-mobile-link nav-link" data-nav-key="about" aria-label="About" title="About" data-i18n="global_nav_about" data-i18n-attr="aria-label,title">
             <span class="header-nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8"></circle><path d="M12 10.75V15.25" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path><circle cx="12" cy="8.2" r="0.8" fill="currentColor"></circle></svg></span>
-            <span class="header-mobile-text">About</span>
+            <span class="header-mobile-text" data-i18n="global_nav_about">About</span>
           </a>
 
-          <a href="why.html" class="header-mobile-link nav-link" data-nav-key="why" aria-label="Why" title="Why">
+          <a href="why.html" class="header-mobile-link nav-link" data-nav-key="why" aria-label="Why" title="Why" data-i18n="global_nav_why" data-i18n-attr="aria-label,title">
             <span class="header-nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8"></circle><path d="M9.7 9.7C9.7 8.43 10.73 7.4 12 7.4C13.27 7.4 14.3 8.43 14.3 9.7C14.3 10.53 13.86 11.13 13.09 11.57C12.38 11.98 12 12.41 12 13.15V13.45" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="16.5" r="0.8" fill="currentColor"></circle></svg></span>
-            <span class="header-mobile-text">Why</span>
+            <span class="header-mobile-text" data-i18n="global_nav_why">Why</span>
           </a>
 
-          <a href="case-study.html" class="header-mobile-link nav-link active" data-nav-key="case-study" aria-current="page" aria-label="Case study" title="Case study">
+          <a href="case-study.html" class="header-mobile-link nav-link active" data-nav-key="case-study" aria-current="page" aria-label="Case study" title="Case study" data-i18n="nav.case-study" data-i18n-attr="aria-label,title">
             <span class="header-nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M6.2 4.8H17.8C18.68 4.8 19.4 5.52 19.4 6.4V17.6C19.4 18.48 18.68 19.2 17.8 19.2H6.2C5.32 19.2 4.6 18.48 4.6 17.6V6.4C4.6 5.52 5.32 4.8 6.2 4.8Z" stroke="currentColor" stroke-width="1.8"></path><path d="M8 9H16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path><path d="M8 12H14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path><path d="M8 15H12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg></span>
-            <span class="header-mobile-text">Case study</span>
+            <span class="header-mobile-text" data-i18n="nav.case-study">Case study</span>
           </a>
 
-          <a href="contributors.html" class="header-mobile-link nav-link" data-nav-key="contributors" aria-label="Contributors" title="Contributors">
+          <a href="contributors.html" class="header-mobile-link nav-link" data-nav-key="contributors" aria-label="Contributors" title="Contributors" data-i18n="nav.contributors" data-i18n-attr="aria-label,title">
             <span class="header-nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M8.2 11.2C10.02 11.2 11.5 9.72 11.5 7.9C11.5 6.08 10.02 4.6 8.2 4.6C6.38 4.6 4.9 6.08 4.9 7.9C4.9 9.72 6.38 11.2 8.2 11.2Z" stroke="currentColor" stroke-width="1.8"></path><path d="M3.6 19.4C4.08 16.72 5.88 15.2 8.2 15.2C10.52 15.2 12.32 16.72 12.8 19.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path><path d="M15.8 10.7C17.3 10.7 18.5 9.5 18.5 8C18.5 6.5 17.3 5.3 15.8 5.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path><path d="M14.8 15.4C17.35 15.58 19.05 17 19.5 19.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg></span>
-            <span class="header-mobile-text">Contributors</span>
+            <span class="header-mobile-text" data-i18n="nav.contributors">Contributors</span>
           </a>
         </nav>
       </div>
@@ -598,5 +599,6 @@
   <script src="translations-ru.js"></script>
   <script src="translations.js"></script>
   <script src="header-nav.js"></script>
+  <script src="settings-panel.js"></script>
 </body>
 </html>

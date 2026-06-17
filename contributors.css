@@ -26,7 +26,8 @@ html {
 
 body.contributors-body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #f4f4f1 0%, #f8f8f5 100%);
+  /* Modificado para usar variáveis de tema dinâmicas */
+  background: linear-gradient(to bottom, var(--bg) 0%, var(--bg-soft) 100%);
   color: var(--text);
   line-height: 1.5;
 }

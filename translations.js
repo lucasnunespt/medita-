@@ -33,15 +33,7 @@ function getTranslation(language, key) {
 
 function buildLanguageSwitcherMarkup() {
   return `
-    <div class="language-pill" data-language-menu>
-      <div class="language-options" id="languageOptions" role="menu" aria-hidden="true" data-language-options>
-        <button type="button" role="menuitem" data-lang-option="pt">PT</button>
-        <button type="button" role="menuitem" data-lang-option="en">EN</button>
-        <button type="button" role="menuitem" data-lang-option="es">ES</button>
-        <button type="button" role="menuitem" data-lang-option="it">IT</button>
-        <button type="button" role="menuitem" data-lang-option="ru">RU</button>
-      </div>
-
+    <div class="language-wrapper" data-language-menu>
       <button
         class="language-trigger"
         type="button"
@@ -57,6 +49,14 @@ function buildLanguageSwitcherMarkup() {
           <path d="M12 3c2.2 2.4 3.3 5.4 3.3 9S14.2 18.6 12 21c-2.2-2.4-3.3-5.4-3.3-9S9.8 5.4 12 3Z" fill="none" stroke="currentColor" stroke-width="1.7"/>
         </svg>
       </button>
+
+      <div class="language-options" id="languageOptions" role="menu" aria-hidden="true" data-language-options>
+        <button type="button" role="menuitem" data-lang-option="pt">PT</button>
+        <button type="button" role="menuitem" data-lang-option="en">EN</button>
+        <button type="button" role="menuitem" data-lang-option="es">ES</button>
+        <button type="button" role="menuitem" data-lang-option="it">IT</button>
+        <button type="button" role="menuitem" data-lang-option="ru">RU</button>
+      </div>
     </div>
   `;
 }

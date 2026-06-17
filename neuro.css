@@ -37,6 +37,7 @@
   --shadow-card: 0 12px 32px rgba(31, 35, 38, 0.05);
   --radius-lg: 28px;
   --states-container: 920px;
+  --container: 1060px; /* Token de container global */
 }
 
 /* =========================
@@ -44,6 +45,17 @@
 ========================= */
 html {
   scroll-behavior: smooth;
+}
+
+/* Classe utilitária para centralização e controle de largura */
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 
 body.landing-body,
@@ -66,7 +78,8 @@ body.landing-body {
 }
 
 body.states-body {
-  background: linear-gradient(to bottom, #f4f4f1 0%, #f8f8f5 100%);
+  /* Modificado para usar variáveis de tema dinâmicas e evitar conflitos */
+  background: linear-gradient(to bottom, var(--bg) 0%, var(--bg-soft) 100%);
 }
 
 a {

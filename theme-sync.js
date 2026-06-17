@@ -1,5 +1,6 @@
 (() => {
-  const themes = ["morning", "afternoon", "day", "sunset", "evening", "night", "late-night"];
+  // Lista com exatamente os 10 termos do contrato CSS
+  const themes = ["morning", "dawn", "afternoon", "day", "sunset", "evening", "night", "warm-night", "sleep", "late-night"];
   const themeClasses = themes.map((theme) => `theme-${theme}`);
 
   function getLocalTimeTheme(date = new Date()) {
@@ -29,6 +30,17 @@
   }
 
   function applyTheme() {
+    // Se o elemento <html> contiver o atributo data-force-theme, aplica e retorna imediatamente
+    const forcedTheme = document.documentElement.getAttribute("data-force-theme");
+    if (forcedTheme) {
+      const targets = [document.documentElement, document.body].filter(Boolean);
+      targets.forEach((target) => {
+        target.classList.remove(...themeClasses);
+        target.classList.add(`theme-${forcedTheme}`);
+      });
+      return;
+    }
+
     const theme = getLocalTimeTheme();
     const targets = [document.documentElement, document.body].filter(Boolean);
 
@@ -37,6 +49,12 @@
       target.classList.add(`theme-${theme}`);
     });
   }
+
+  window.NeuroMeditTheme = {
+    apply: applyTheme,
+    getLocalTimeTheme,
+    themes: [...themes],
+  };
 
   applyTheme();
 

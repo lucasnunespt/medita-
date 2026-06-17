@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="i18n.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="theme-sync.css">
+  <link rel="stylesheet" href="settings-panel.css">
   <script src="theme-sync.js"></script>
 </head>
 <body class="complete-body feedback-atmosphere feedback-minimal">
@@ -64,17 +65,17 @@
           <h1 class="feedback-minimal-question" data-feedback-question data-i18n="index_choices_aria">Como você se sente agora?</h1>
 
           <div class="feedback-options" data-feedback-options hidden>
-            <button class="feedback-option" type="button" data-feedback-completed data-i18n="index_choice_lighter">Mais leve</button>
-            <button class="feedback-option" type="button" data-feedback-completed data-i18n="index_choice_same">Igual</button>
-            <button class="feedback-option" type="button" data-feedback-completed data-feedback-tense>Mais tenso</button>
+            <button class="feedback-btn feedback-option" type="button" data-feedback-completed data-i18n="index_choice_lighter">Mais leve</button>
+            <button class="feedback-btn feedback-option" type="button" data-feedback-completed data-i18n="index_choice_same">Igual</button>
+            <button class="feedback-btn feedback-option" type="button" data-feedback-completed data-feedback-tense>Mais tenso</button>
           </div>
 
           <p class="feedback-thank-you" data-feedback-save-status data-feedback-thank-you data-i18n="feedback_thank_you" role="status" aria-live="polite" hidden>Thank you. Your response has been saved.</p>
 
           <div class="complete-actions" data-feedback-actions hidden>
-            <a href="home.html" class="button primary-button" data-i18n="home_continue_cta">Continuar</a>
-            <a href="index.html" class="feedback-text-link" data-feedback-repeat data-feedback-repeat-label>repetir sessão</a>
-            <a href="home.html" class="feedback-text-link" data-feedback-home-label>voltar ao início</a>
+            <a href="home.html" class="feedback-btn primary-button" data-i18n="home_continue_cta">Continuar</a>
+            <a href="index.html" class="feedback-ghost-link" data-feedback-repeat data-feedback-repeat-label>repetir sessão</a>
+            <a href="home.html" class="feedback-ghost-link" data-feedback-home-label>voltar ao início</a>
           </div>
         </div>
       </div>
@@ -261,5 +262,6 @@
     })();
   </script>
   <script src="header-nav.js"></script>
+  <script src="settings-panel.js"></script>
 </body>
 </html>

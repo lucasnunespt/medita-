@@ -89,7 +89,7 @@
     }
 
     window.clearInterval(fadeTimer);
-    const targetVolume = 1;
+    const targetVolume = window.NeuroMeditSettings?.getVolume?.() ?? 1;
     const startedAt = Date.now();
     airlockAudio.volume = 0;
 
@@ -284,6 +284,11 @@
           isStarting = false;
           setStartButtonReady();
           showFallbackError();
+        }
+      });
+      window.addEventListener("neuromedit:settingschange", () => {
+        if (!airlockAudio.paused) {
+          airlockAudio.volume = window.NeuroMeditSettings?.getVolume?.() ?? airlockAudio.volume;
         }
       });
     }

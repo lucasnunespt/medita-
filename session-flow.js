@@ -76,6 +76,15 @@
     return `feedback.html?source=${encodeURIComponent(feedbackSource)}&practice=${encodeURIComponent(feedbackPractice)}&status=${status}`;
   }
 
+  function getSettings() {
+    return window.NeuroMeditSettings?.get?.() || {};
+  }
+
+  function getSettingsVolume(fallback = 1) {
+    const volume = window.NeuroMeditSettings?.getVolume?.();
+    return typeof volume === "number" ? Math.max(0, Math.min(1, volume)) : fallback;
+  }
+
   function showStep(step) {
     [prep, airlock, practice].forEach((section) => {
       const active = section === step;
@@ -155,7 +164,7 @@
         oscillator.start();
       });
 
-      masterGain.gain.linearRampToValueAtTime(0.12, audioContext.currentTime + 5);
+      masterGain.gain.linearRampToValueAtTime(getSettingsVolume(1) * 0.12, audioContext.currentTime + 5);
     } catch (error) {
       audioContext = null;
     }
@@ -175,7 +184,7 @@
       return;
     }
 
-    audio.volume = sessionAudioSrc ? 1 : 0.16;
+    audio.volume = getSettingsVolume(sessionAudioSrc ? 1 : 0.16);
     const attempt = audio.play();
     if (attempt && typeof attempt.catch === "function") {
       attempt.catch(startGeneratedAudio);
@@ -188,14 +197,15 @@
 
     if (audioContext && masterGain) {
       masterGain.gain.cancelScheduledValues(audioContext.currentTime);
-      masterGain.gain.linearRampToValueAtTime(0, audioContext.currentTime + 1.6);
+      const fadeDuration = getSettings().smoothTransition === false ? 0.35 : 1.6;
+      masterGain.gain.linearRampToValueAtTime(0, audioContext.currentTime + fadeDuration);
       window.setTimeout(() => {
         if (audioContext) {
           audioContext.close();
           audioContext = null;
           masterGain = null;
         }
-      }, 1800);
+      }, getSettings().smoothTransition === false ? 500 : 1800);
     }
   }
 
@@ -326,6 +336,14 @@
   audio.addEventListener("ended", () => {
     if (!usingGeneratedAudio) {
       completeSession();
+    }
+  });
+  window.addEventListener("neuromedit:settingschange", () => {
+    if (!audio.paused) {
+      audio.volume = getSettingsVolume(audio.volume);
+    }
+    if (masterGain && audioContext) {
+      masterGain.gain.setTargetAtTime(getSettingsVolume(0.12) * 0.12, audioContext.currentTime, 0.2);
     }
   });
 })();

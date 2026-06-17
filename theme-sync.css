@@ -511,33 +511,33 @@ body.theme-late-night .session-start-button {
   color: var(--button-text);
 }
 
-body.theme-morning :is(h1, h2, h3, .site-logo, .header-nav-link.active, .header-nav-link[aria-current="page"]),
-body.theme-afternoon :is(h1, h2, h3, .site-logo, .header-nav-link.active, .header-nav-link[aria-current="page"]),
-body.theme-day :is(h1, h2, h3, .site-logo, .header-nav-link.active, .header-nav-link[aria-current="page"]),
-body.theme-sunset :is(h1, h2, h3, .site-logo, .header-nav-link.active, .header-nav-link[aria-current="page"]),
-body.theme-evening :is(h1, h2, h3, .site-logo, .header-nav-link.active, .header-nav-link[aria-current="page"]),
-body.theme-night :is(h1, h2, h3, .site-logo, .header-nav-link.active, .header-nav-link[aria-current="page"]),
-body.theme-late-night :is(h1, h2, h3, .site-logo, .header-nav-link.active, .header-nav-link[aria-current="page"]) {
+body.theme-morning:not(.case-study-body) :is(h1, h2, h3, .site-logo, .header-nav-link.active, .header-nav-link[aria-current="page"]),
+body.theme-afternoon:not(.case-study-body) :is(h1, h2, h3, .site-logo, .header-nav-link.active, .header-nav-link[aria-current="page"]),
+body.theme-day:not(.case-study-body) :is(h1, h2, h3, .site-logo, .header-nav-link.active, .header-nav-link[aria-current="page"]),
+body.theme-sunset:not(.case-study-body) :is(h1, h2, h3, .site-logo, .header-nav-link.active, .header-nav-link[aria-current="page"]),
+body.theme-evening:not(.case-study-body) :is(h1, h2, h3, .site-logo, .header-nav-link.active, .header-nav-link[aria-current="page"]),
+body.theme-night:not(.case-study-body) :is(h1, h2, h3, .site-logo, .header-nav-link.active, .header-nav-link[aria-current="page"]),
+body.theme-late-night:not(.case-study-body) :is(h1, h2, h3, .site-logo, .header-nav-link.active, .header-nav-link[aria-current="page"]) {
   color: var(--text-primary);
 }
 
-body.theme-morning :is(p, .eyebrow, .section-support-text, .card-label, .state-signal, .session-meta, .category-text, .footer-links a, .header-nav-link, .header-mobile-link),
-body.theme-afternoon :is(p, .eyebrow, .section-support-text, .card-label, .state-signal, .session-meta, .category-text, .footer-links a, .header-nav-link, .header-mobile-link),
-body.theme-day :is(p, .eyebrow, .section-support-text, .card-label, .state-signal, .session-meta, .category-text, .footer-links a, .header-nav-link, .header-mobile-link),
-body.theme-sunset :is(p, .eyebrow, .section-support-text, .card-label, .state-signal, .session-meta, .category-text, .footer-links a, .header-nav-link, .header-mobile-link),
-body.theme-evening :is(p, .eyebrow, .section-support-text, .card-label, .state-signal, .session-meta, .category-text, .footer-links a, .header-nav-link, .header-mobile-link),
-body.theme-night :is(p, .eyebrow, .section-support-text, .card-label, .state-signal, .session-meta, .category-text, .footer-links a, .header-nav-link, .header-mobile-link),
-body.theme-late-night :is(p, .eyebrow, .section-support-text, .card-label, .state-signal, .session-meta, .category-text, .footer-links a, .header-nav-link, .header-mobile-link) {
+body.theme-morning:not(.case-study-body) :is(p, .eyebrow, .section-support-text, .card-label, .state-signal, .session-meta, .category-text, .footer-links a, .header-nav-link, .header-mobile-link),
+body.theme-afternoon:not(.case-study-body) :is(p, .eyebrow, .section-support-text, .card-label, .state-signal, .session-meta, .category-text, .footer-links a, .header-nav-link, .header-mobile-link),
+body.theme-day:not(.case-study-body) :is(p, .eyebrow, .section-support-text, .card-label, .state-signal, .session-meta, .category-text, .footer-links a, .header-nav-link, .header-mobile-link),
+body.theme-sunset:not(.case-study-body) :is(p, .eyebrow, .section-support-text, .card-label, .state-signal, .session-meta, .category-text, .footer-links a, .header-nav-link, .header-mobile-link),
+body.theme-evening:not(.case-study-body) :is(p, .eyebrow, .section-support-text, .card-label, .state-signal, .session-meta, .category-text, .footer-links a, .header-nav-link, .header-mobile-link),
+body.theme-night:not(.case-study-body) :is(p, .eyebrow, .section-support-text, .card-label, .state-signal, .session-meta, .category-text, .footer-links a, .header-nav-link, .header-mobile-link),
+body.theme-late-night:not(.case-study-body) :is(p, .eyebrow, .section-support-text, .card-label, .state-signal, .session-meta, .category-text, .footer-links a, .header-nav-link, .header-mobile-link) {
   color: var(--text-secondary);
 }
 
-body.theme-morning :is(a:not(.button):not(.primary-button):not(.secondary-button):not(.state-card):not(.featured-card):not(.session-card):not(.quick-card), .text-link),
-body.theme-afternoon :is(a:not(.button):not(.primary-button):not(.secondary-button):not(.state-card):not(.featured-card):not(.session-card):not(.quick-card), .text-link),
-body.theme-day :is(a:not(.button):not(.primary-button):not(.secondary-button):not(.state-card):not(.featured-card):not(.session-card):not(.quick-card), .text-link),
-body.theme-sunset :is(a:not(.button):not(.primary-button):not(.secondary-button):not(.state-card):not(.featured-card):not(.session-card):not(.quick-card), .text-link),
-body.theme-evening :is(a:not(.button):not(.primary-button):not(.secondary-button):not(.state-card):not(.featured-card):not(.session-card):not(.quick-card), .text-link),
-body.theme-night :is(a:not(.button):not(.primary-button):not(.secondary-button):not(.state-card):not(.featured-card):not(.session-card):not(.quick-card), .text-link),
-body.theme-late-night :is(a:not(.button):not(.primary-button):not(.secondary-button):not(.state-card):not(.featured-card):not(.session-card):not(.quick-card), .text-link) {
+body.theme-morning:not(.case-study-body) :is(a:not(.button):not(.primary-button):not(.secondary-button):not(.state-card):not(.featured-card):not(.session-card):not(.quick-card), .text-link),
+body.theme-afternoon:not(.case-study-body) :is(a:not(.button):not(.primary-button):not(.secondary-button):not(.state-card):not(.featured-card):not(.session-card):not(.quick-card), .text-link),
+body.theme-day:not(.case-study-body) :is(a:not(.button):not(.primary-button):not(.secondary-button):not(.state-card):not(.featured-card):not(.session-card):not(.quick-card), .text-link),
+body.theme-sunset:not(.case-study-body) :is(a:not(.button):not(.primary-button):not(.secondary-button):not(.state-card):not(.featured-card):not(.session-card):not(.quick-card), .text-link),
+body.theme-evening:not(.case-study-body) :is(a:not(.button):not(.primary-button):not(.secondary-button):not(.state-card):not(.featured-card):not(.session-card):not(.quick-card), .text-link),
+body.theme-night:not(.case-study-body) :is(a:not(.button):not(.primary-button):not(.secondary-button):not(.state-card):not(.featured-card):not(.session-card):not(.quick-card), .text-link),
+body.theme-late-night:not(.case-study-body) :is(a:not(.button):not(.primary-button):not(.secondary-button):not(.state-card):not(.featured-card):not(.session-card):not(.quick-card), .text-link) {
   color: var(--link-text);
 }
 
@@ -638,3 +638,87 @@ body.states-body .site-header {
     transition-duration: 0.001ms !important;
   }
 }
+
+/* ==========================================
+   MODO DE MEDITAÇÃO & AIRLOCK (Calm Technology)
+   ========================================== */
+
+/* 1. A CLASSE DE BODY (.is-meditating) */
+body {
+  transition: background-color 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              background 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+body.is-meditating {
+  background-color: var(--neural) !important;
+  background-image: none !important;
+}
+
+header,
+footer,
+nav,
+.hide-on-meditation,
+.settings-fab {
+  transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+body.is-meditating header,
+body.is-meditating footer,
+body.is-meditating nav,
+body.is-meditating .hide-on-meditation,
+body.is-meditating .settings-fab {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+/* 2. O COMPONENTE AIRLOCK (.meditation-airlock) */
+.meditation-airlock {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: color-mix(in srgb, var(--bg-color, #17100d) 40%, transparent);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.meditation-airlock.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.meditation-airlock .airlock-text {
+  color: var(--text-main, #f6e6d1);
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  text-align: center;
+  animation: airlock-fade 3s ease-in-out infinite;
+}
+
+@keyframes airlock-fade {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* 3. MODO DE FOCO DOS CONTROLOS (.meditation-controls) */
+.meditation-controls .idle-hide,
+.idle-hide {
+  transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+body.mouse-idle .meditation-controls .idle-hide,
+body.mouse-idle .idle-hide {
+  opacity: 0;
+  pointer-events: none;
+}
+

@@ -10,6 +10,7 @@ window.NeuroMeditTranslations = {
     global_nav_about: "О проекте",
     global_nav_why: "Почему",
     "nav.contributors": "Участники",
+    "nav.case-study": "Кейс-стади",
     global_session_details: "Детали практики",
     global_exit: "Выйти",
     global_exit_meditation: "Выйти из медитации",

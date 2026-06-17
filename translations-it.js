@@ -1,4 +1,4 @@
-﻿window.NeuroMeditTranslations = {
+window.NeuroMeditTranslations = {
   ...(window.NeuroMeditTranslations || {}),
   it: {
     global_language_selector: "Selettore della lingua",
@@ -10,6 +10,7 @@
     global_nav_about: "Chi siamo",
     global_nav_why: "Perché",
     "nav.contributors": "Collaboratori",
+    "nav.case-study": "Studio di caso",
     global_session_details: "Dettagli della sessione",
     global_exit: "Esci",
     global_exit_meditation: "Esci dalla meditazione",
