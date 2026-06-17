@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Lucas - NeuroMedit</title>
+  <meta name="description" content="The personal story behind Lucas, his path to calm, and the origin of NeuroMedit.">
+  <link rel="icon" href="assets/neuromedit-symbol-vector.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="theme-sync.css">
+  <link rel="stylesheet" href="settings-panel.css">
+  <link rel="stylesheet" href="about-lucas.css">
+  <script src="theme-sync.js"></script>
+</head>
+<body class="lucas-page">
+  <header class="site-header" data-header>
+    <div class="container header-shell">
+      <a class="brand" href="index.html">
+        <img src="assets/neuromedit-symbol-vector.svg" alt="NeuroMedit symbol" class="brand-symbol">
+        <span class="brand-wordmark">NeuroMedit</span>
+      </a>
+
+      <nav class="header-nav header-nav-desktop" aria-label="Main navigation">
+        <span class="nav-indicator" aria-hidden="true"></span>
+        <a href="home.html" class="header-nav-link nav-link" data-nav-key="home" aria-label="Home" title="Home">
+          <span class="header-nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M3.5 10.5L12 3.75L20.5 10.5V19.5H14.75V14.25H9.25V19.5H3.5V10.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+          <span class="header-nav-text">Home</span>
+        </a>
+        <a href="library.html" class="header-nav-link nav-link" data-nav-key="library" aria-label="Library" title="Library">
+          <span class="header-nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M12 6.5C10.3 5.4 8.3 4.85 6.25 4.9C5.03 4.93 3.83 5.18 2.7 5.65V18.35C3.83 17.88 5.03 17.63 6.25 17.6C8.3 17.55 10.3 18.1 12 19.2C13.7 18.1 15.7 17.55 17.75 17.6C18.97 17.63 20.17 17.88 21.3 18.35V5.65C20.17 5.18 18.97 4.93 17.75 4.9C15.7 4.85 13.7 5.4 12 6.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 6.5V19.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+          <span class="header-nav-text">Library</span>
+        </a>
+        <a href="about.html" class="header-nav-link nav-link" data-nav-key="about" aria-label="About" title="About">
+          <span class="header-nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8"></circle><path d="M12 10.75V15.25" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path><circle cx="12" cy="8.2" r="0.8" fill="currentColor"></circle></svg></span>
+          <span class="header-nav-text">About</span>
+        </a>
+        <a href="why.html" class="header-nav-link nav-link" data-nav-key="why" aria-label="Why" title="Why">
+          <span class="header-nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8"></circle><path d="M9.7 9.7C9.7 8.43 10.73 7.4 12 7.4C13.27 7.4 14.3 8.43 14.3 9.7C14.3 10.53 13.86 11.13 13.09 11.57C12.38 11.98 12 12.41 12 13.15V13.45" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="16.5" r="0.8" fill="currentColor"></circle></svg></span>
+          <span class="header-nav-text">Why</span>
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="header-language-slot" data-language-host></div>
+        <button type="button" class="header-menu-toggle" data-mobile-toggle aria-controls="lucas-mobile-nav" aria-expanded="false" aria-label="Open menu" title="Open menu">
+          <span class="header-menu-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M4 7.5H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path><path d="M4 12H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path><path d="M4 16.5H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="header-mobile-overlay" data-mobile-overlay hidden></div>
+    <aside id="lucas-mobile-nav" class="header-mobile-panel" data-mobile-panel aria-hidden="true" hidden>
+      <div class="header-mobile-inner">
+        <div class="header-mobile-top">
+          <p class="header-mobile-brand">NeuroMedit</p>
+          <button type="button" class="header-mobile-close" data-mobile-close aria-label="Close menu" title="Close menu">
+            <span class="header-menu-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M6.5 6.5L17.5 17.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path><path d="M17.5 6.5L6.5 17.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg></span>
+          </button>
+        </div>
+        <nav class="header-mobile-nav" aria-label="Main navigation">
+          <a href="home.html" class="header-mobile-link nav-link" data-nav-key="home">Home</a>
+          <a href="library.html" class="header-mobile-link nav-link" data-nav-key="library">Library</a>
+          <a href="about.html" class="header-mobile-link nav-link" data-nav-key="about">About</a>
+          <a href="why.html" class="header-mobile-link nav-link" data-nav-key="why">Why</a>
+        </nav>
+      </div>
+    </aside>
+  </header>
+
+  <main id="main-content">
+    <section class="lucas-hero" aria-labelledby="lucas-title">
+      <div class="lucas-hero-inner">
+        <p class="lucas-kicker">The story behind NeuroMedit</p>
+        <h1 id="lucas-title">Lucas learned calm by walking toward it slowly.</h1>
+        <p>Before NeuroMedit became a place for others to breathe, it was a private search for silence inside a loud life.</p>
+      </div>
+    </section>
+
+    <section class="story-scroll" data-story-scroll aria-label="Lucas timeline">
+      <div class="story-progress" aria-hidden="true">
+        <span class="story-progress-line"><span data-progress-bar></span></span>
+        <span class="story-progress-count"><span data-progress-current>01</span> / 07</span>
+      </div>
+
+      <div class="story-sticky">
+        <div class="story-track" data-story-track>
+          <article class="journey-card intro-card" aria-labelledby="chapter-1">
+            <div class="chapter-copy">
+              <p class="chapter-number">01</p>
+              <h2 id="chapter-1">The Inner Noise</h2>
+              <p>There was a time when Lucas could hear everything except himself.</p>
+              <p>The days moved fast. The mind moved faster. Calm felt like a language spoken somewhere else.</p>
+            </div>
+            <button class="journey-image-button" type="button" data-lightbox-src="assets/lucas-journey-01.jpg" data-lightbox-alt="Lucas standing in a quiet room, surrounded by soft morning shadow">
+              <img src="assets/lucas-journey-01.jpg" alt="Lucas standing in a quiet room, surrounded by soft morning shadow">
+            </button>
+          </article>
+
+          <article class="journey-card" aria-labelledby="chapter-2">
+            <div class="chapter-copy">
+              <p class="chapter-number">02</p>
+              <h2 id="chapter-2">The First Breath</h2>
+              <p>Then came one breath that was not dramatic.</p>
+              <p>Just enough air to notice that his body had been waiting for him to return.</p>
+            </div>
+            <button class="journey-image-button" type="button" data-lightbox-src="assets/lucas-journey-02.jpg" data-lightbox-alt="A close calm portrait of Lucas breathing with eyes closed">
+              <img src="assets/lucas-journey-02.jpg" alt="A close calm portrait of Lucas breathing with eyes closed">
+            </button>
+          </article>
+
+          <article class="journey-card" aria-labelledby="chapter-3">
+            <div class="chapter-copy">
+              <p class="chapter-number">03</p>
+              <h2 id="chapter-3">Nature Started Speaking</h2>
+              <p>Outside, the world did not ask him to improve.</p>
+              <p>Trees repeated their quiet lesson: grow slowly, bend often, stay rooted.</p>
+            </div>
+            <button class="journey-image-button" type="button" data-lightbox-src="assets/lucas-journey-03.jpg" data-lightbox-alt="Lucas walking through green nature after rain">
+              <img src="assets/lucas-journey-03.jpg" alt="Lucas walking through green nature after rain">
+            </button>
+          </article>
+
+          <article class="journey-card" aria-labelledby="chapter-4">
+            <div class="chapter-copy">
+              <p class="chapter-number">04</p>
+              <h2 id="chapter-4">Movement Became Meditation</h2>
+              <p>Yoga changed meditation from an idea into a rhythm.</p>
+              <p>The breath had a shape. The body had memory. Stillness could move.</p>
+            </div>
+            <button class="journey-image-button" type="button" data-lightbox-src="assets/lucas-journey-04.jpg" data-lightbox-alt="Lucas practicing yoga in warm natural light">
+              <img src="assets/lucas-journey-04.jpg" alt="Lucas practicing yoga in warm natural light">
+            </button>
+          </article>
+
+          <article class="journey-card" aria-labelledby="chapter-5">
+            <div class="chapter-copy">
+              <p class="chapter-number">05</p>
+              <h2 id="chapter-5">The Calm I Didn't Know I Had</h2>
+              <p>Travel softened the edges of certainty.</p>
+              <p>In unfamiliar places, Lucas found something familiar beneath everything: a quieter self, already there.</p>
+            </div>
+            <button class="journey-image-button" type="button" data-lightbox-src="assets/lucas-journey-05.jpg" data-lightbox-alt="Lucas looking over a distant landscape while traveling">
+              <img src="assets/lucas-journey-05.jpg" alt="Lucas looking over a distant landscape while traveling">
+            </button>
+          </article>
+
+          <article class="journey-card" aria-labelledby="chapter-6">
+            <div class="chapter-copy">
+              <p class="chapter-number">06</p>
+              <h2 id="chapter-6">NeuroMedit</h2>
+              <p>NeuroMedit began as a promise to make calm feel reachable.</p>
+              <p>Not perfect. Not distant. A soft doorway back into attention, breath, and the nervous system.</p>
+            </div>
+            <button class="journey-image-button" type="button" data-lightbox-src="assets/lucas-journey-06.jpg" data-lightbox-alt="A peaceful NeuroMedit workspace with natural textures and soft light">
+              <img src="assets/lucas-journey-06.jpg" alt="A peaceful NeuroMedit workspace with natural textures and soft light">
+            </button>
+          </article>
+
+          <article class="journey-card final-card" aria-labelledby="chapter-7">
+            <div class="chapter-copy">
+              <p class="chapter-number">07</p>
+              <h2 id="chapter-7">Becoming</h2>
+              <p>The path is still alive.</p>
+              <p>Lucas is still listening, still practicing, still building a place where people can meet themselves with care.</p>
+            </div>
+            <button class="journey-image-button" type="button" data-lightbox-src="assets/lucas-journey-07.jpg" data-lightbox-alt="Lucas at sunset, standing quietly in open nature">
+              <img src="assets/lucas-journey-07.jpg" alt="Lucas at sunset, standing quietly in open nature">
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lucas-lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-label="Expanded journey image">
+    <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close image" title="Close image">Close</button>
+    <img data-lightbox-image src="" alt="">
+  </div>
+
+  <script src="header-nav.js"></script>
+  <script src="settings-panel.js"></script>
+  <script src="about-lucas.js"></script>
+</body>
+</html>
