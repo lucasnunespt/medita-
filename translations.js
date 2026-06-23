@@ -33,7 +33,7 @@ function getTranslation(language, key) {
 
 function buildLanguageSwitcherMarkup() {
   return `
-    <div class="language-wrapper" data-language-menu>
+    <div class="language-wrapper language-pill" data-language-menu>
       <button
         class="language-trigger"
         type="button"
