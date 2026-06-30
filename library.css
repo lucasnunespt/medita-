@@ -312,6 +312,7 @@ a.session-card:hover {
   background: rgba(255, 255, 255, 0.86);
 }
 
+
 a.session-card:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 4px;
@@ -336,6 +337,80 @@ a.session-card::after {
 .session-card p:last-child {
   max-width: 28ch;
   line-height: 1.7;
+}
+
+/* =========================
+   LOCKED SESSION CARDS
+========================= */
+.session-card--locked {
+  position: relative;
+  cursor: default;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.session-card--locked:hover {
+  transform: translateY(-1px);
+  border-color: rgba(138, 165, 160, 0.14);
+  box-shadow: var(--shadow-card);
+  background: var(--surface);
+  cursor: default;
+}
+
+/* Blur the original card content, leave the overlay sharp */
+.session-card--locked > :not(.session-lock) {
+  filter: blur(3.5px);
+  user-select: none;
+  opacity: 0.55;
+  transition: filter 0.25s ease, opacity 0.25s ease;
+}
+
+/* Hide the arrow that normal cards show */
+.session-card--locked::after {
+  display: none;
+}
+
+/* Lock overlay */
+.session-lock {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 1.6rem;
+  text-align: center;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.session-lock-icon {
+  font-size: 1.35rem;
+  line-height: 1;
+  opacity: 0.75;
+  margin-bottom: 0.1rem;
+}
+
+.session-lock-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  background: var(--surface-strong, rgba(255, 255, 255, 0.88));
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.3rem 0.85rem;
+}
+
+.session-lock p {
+  font-size: 0.83rem;
+  line-height: 1.5;
+  color: var(--text-soft);
+  max-width: 22ch;
+  opacity: 0.85;
 }
 
 /* =========================
